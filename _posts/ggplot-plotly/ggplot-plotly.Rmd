@@ -54,6 +54,7 @@ Benefits of ```ggplot2``` over ```plotly```:
 # Converting ggplot2 into plotly
 
 An additional benefit of ```plotly``` is that you can convert your ```ggplot()``` graphs into a ```plotly``` object.
+
 ```{r,message=F,warning=F}
 library(ggplot2)
 p = qplot(x = rnorm(1000),geom = "histogram")
@@ -61,6 +62,7 @@ p
 ```
 
 Then, invoking the ```ggplotly(p)``` command, we see the transformation:
+
 ```{r,message=F,warning=F}
 ggplotly(p)
 ```
@@ -75,7 +77,9 @@ p
 ggplotly(p)
 ```
 
-But since Plotly also saves to an object, you can use the ```%>%``` notation to pipe and add additional plotting commands. This is similar to the ```+``` operator in ```ggplot()```.
+But since Plotly also saves to an object, you can use the ```%>%``` notation to pipe and add additional plotting commands. This is similar to the ```+``` operator in
+```ggplot()```.
+
 ```{r,message=F,warning=F}
 p = qplot(data = iris, x = Sepal.Width, y = Sepal.Length, geom = "point",color = Species) + theme(legend.position="bottom")
 p2 = ggplotly(p) 
@@ -84,6 +88,7 @@ p2 %>% layout(legend = list(orientation = 'h'))
 ```
 
 The legend doesn't do exactly what we want, but you can manipulate the legend location manually using x and y coordinates. The ```orientation = 'h'``` setting in the [docs](https://plot.ly/r/legend/) puts the legend on the bottom for default ```plot_ly()``` objects. Graphing the same series, we see the legend at the bottom:
+
 
 ```{r, message=F, warning=F}
 plot_ly(iris, x = ~Sepal.Width, y = ~Sepal.Length,type = 'scatter', mode = 'markers', color = ~Species) %>% layout(legend = list(orientation = 'h'))
@@ -94,6 +99,7 @@ plot_ly(iris, x = ~Sepal.Width, y = ~Sepal.Length,type = 'scatter', mode = 'mark
 [^2]: This may depend on your screen.
 
 Plotly seems very intuitive relative to ```ggplot2``` in doing layout customization. Things that took me many iterations on StackOverflow to figure out, like adding a black line on y = 0, are built in to Plotly. 
+
 ```{r, message=F, warning=F}
 p = plot_ly(iris, x = ~Sepal.Width, y = ~Sepal.Length,type = 'scatter', mode = 'markers', color = ~Species) 
 # Put legend on bottom, change the x-axis range, and turn on the x-axis line. Also, make the zeroline visible, and turn it red.
@@ -137,4 +143,12 @@ Both RShiny and Plotly allow for creating dashboards. Plotly allows you to build
 
 # Final thoughts
 
-Overall, it seems that ```ggplot2``` is quicker to build and find what you want. With facet wrapping, the ```qplot()``` command, and ```ggsave()```, you can whip something up fast. Plotly is better for dashboards, as you can interact with the plots. I feel like Plotly has a better syntax and documentation, and so it may be easier to get a basic plot to look how you want it to. But ```ggplot2``` seems to have more advanced features, so if you want to get into refined customization, you may want to stick with ```ggplot2```. They're both great, and serve different purposes, but I'll be using ```plotly``` for my RMarkdown and RShiny visualizations going forward.
+Overall, it seems that ```ggplot2``` is quicker to build and find what you want. 
+With facet wrapping, the ```qplot()``` command, and ```ggsave()```, you can whip
+something up fast. Plotly is better for dashboards, as you can interact with 
+the plots. I feel like Plotly has a better syntax and documentation, and so it 
+may be easier to get a basic plot to look how you want it to. But ```ggplot2``` 
+seems to have more advanced features, so if you want to get into refined 
+customization, you may want to stick with ```ggplot2```. They're both great, 
+and serve different purposes, but I'll be using ```plotly``` for my RMarkdown 
+and RShiny visualizations going forward.
