@@ -3,6 +3,7 @@ title: "Bryan Whiting's blog"
 description: |
   Bryan Whiting's blog
 output_dir: "docs"
+google_analytics: "UA-85616639-1"
 navbar:
   right:
     - text: "Home"
