@@ -1,26 +1,39 @@
 ---
-title: "Why I Write"
-author: "Bryan Whiting"
-description: |
-  Some additional details about the blog
-date: 2017-06-23
-showthedate: false
+title: "Bryan Whiting"
+image: "tobi.jpg"
+links:
+  - label: '`r fontawesome::fa("signature")` Blog'
+    url: "https://www.bryanwhiting.com"
+  - label: '`r fontawesome::fa("linkedin")` LinkedIn'
+    url: "https://www.linkedin.com/in/bryan-whiting/"
+  - label: '`r fontawesome::fa("twitter")` Twitter'
+    url: "https://twitter.com/bryanwhiting"
+  - label: '`r fontawesome::fa("github")` GitHub'
+    url: "https://github.com/bryanwhiting"
+output:
+  postcards::trestles
+site: distill::distill_website
 ---
+ 
+## Bio
 
-I want to share. I believe that writing is a process where scrambled thoughts can be converted into shareable information.
+Data scientist with 7 years of experience building complex, large-scale data pipelines and inferential and machine learning models. Experience running online A/B experiments, managing complex compute infrastructure and confidently presenting to VP-level audiences. Passionate about innovation, creativity, tech, data, engineering, leadership, mentoring and team building. Former startup co-founder.
 
-In math, processes are called functions. In writing, my thoughts are the inputs, writing is the function, and this post is my output. In statistics, the truth is unattainable, only estimable. Writing is the function that uses my thoughts to estimate truth. And bias is the distance from the truth. In reading my writing, there are two biases at play for you: my writing's distance from the truth and your distance from understanding my writing. I hope by writing often I can reduce both sources of bias. Better writing means better sharing, and sharing truth helps us both.
+## Experience
 
-My hope is that those who read this blog will take away from it a portion of what I've gained from others. It's likely that this blog is more valueable for me than it is for you, but I hope that what I've learned can help. If it does, please share.
+**Google Maps/YouTube** | Data Scientist, Engineering | Apr 2020 - Present
 
-# About me
+**Capital One** | Data Scientist, Machine Learning | Jul 2017 - Mar 2020
 
-I received a BS and MS in Statistics from Brigham Young University. During that time, I first learned to code in R and SAS. Since then, I've learned Stata, Excel Visual Basic for Applications (VBA), Python, [vi], and [RShiny]. I love to build innovative products, work with data, learn something new, and share what I learn.
+**Bates White Economic Consulting** | Analytics Consultant | Aug 2015 - Jul 2017
 
-In my spare time, I enjoy guitar, drawing, and learning golf. If I had snow nearby, I would ski it.
+**Novi Security** | Co-Founder | Jan 2013 – Aug 2014
 
-[^1]: And by milk I mean webscrape. (I needed an "m" for alliteration.)
-[Bates White]:http://www.bateswhite.com/ 
-[vi]:https://en.wikipedia.org/wiki/Vi
-[RShiny]:http://shiny.rstudio.com/
+## Education and Service
+
+**Brigham Young University** | Provo, UT
+
+* M.S. in Statistics | September 2013 - May 2015
+* B.S. in Statistics | September 2008 - May 2015
+* Volunteer Service | Sept 2009-Aug 2011 | Honduras
 

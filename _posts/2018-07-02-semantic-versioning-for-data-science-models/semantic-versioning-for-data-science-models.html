@@ -86,635 +86,39 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>Bryan Whiting's blog</title>
+  <title>Semantic Versioning for Data Science Models</title>
+
+  <meta property="description" itemprop="description" content="Meaningful versioning for data science models and machine learning pipelines."/>
 
 
-
+  <!--  https://schema.org/Article -->
+  <meta property="article:published" itemprop="datePublished" content="2018-07-02"/>
+  <meta property="article:created" itemprop="dateCreated" content="2018-07-02"/>
+  <meta name="article:author" content="Bryan Whiting"/>
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Bryan Whiting&#39;s blog"/>
+  <meta property="og:title" content="Semantic Versioning for Data Science Models"/>
   <meta property="og:type" content="article"/>
+  <meta property="og:description" content="Meaningful versioning for data science models and machine learning pipelines."/>
   <meta property="og:locale" content="en_US"/>
-  <meta property="og:site_name" content="Bryan Whiting&#39;s blog"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Bryan Whiting&#39;s blog"/>
+  <meta property="twitter:title" content="Semantic Versioning for Data Science Models"/>
+  <meta property="twitter:description" content="Meaningful versioning for data science models and machine learning pipelines."/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","site","listing"]}},"value":[{"type":"character","attributes":{},"value":["Bryan Whiting's blog"]},{"type":"character","attributes":{},"value":["distill::distill_website"]},{"type":"character","attributes":{},"value":["posts"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","date","author","slug","categories","output"]}},"value":[{"type":"character","attributes":{},"value":["Semantic Versioning for Data Science Models"]},{"type":"character","attributes":{},"value":["Meaningful versioning for data science models and machine learning pipelines.\n"]},{"type":"character","attributes":{},"value":["2018-07-02"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Bryan Whiting"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":[]}},"value":[]}]}]},{"type":"character","attributes":{},"value":["semantic-versioning-for-data-science-models"]},{"type":"character","attributes":{},"value":["data science","machine learning"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
+  
+  <script type="text/json" id="radix-resource-manifest">
+  {"type":"character","attributes":{},"value":["semantic-versioning-for-data-science-models_files/anchor-4.2.2/anchor.min.js","semantic-versioning-for-data-science-models_files/bowser-1.9.3/bowser.min.js","semantic-versioning-for-data-science-models_files/distill-2.2.21/template.v2.js","semantic-versioning-for-data-science-models_files/header-attrs-2.10/header-attrs.js","semantic-versioning-for-data-science-models_files/jquery-1.11.3/jquery.min.js","semantic-versioning-for-data-science-models_files/popper-2.6.0/popper.min.js","semantic-versioning-for-data-science-models_files/tippy-6.2.7/tippy-bundle.umd.min.js","semantic-versioning-for-data-science-models_files/tippy-6.2.7/tippy-light-border.css","semantic-versioning-for-data-science-models_files/tippy-6.2.7/tippy.css","semantic-versioning-for-data-science-models_files/tippy-6.2.7/tippy.umd.min.js","semantic-versioning-for-data-science-models_files/webcomponents-2.0.0/webcomponents.js"]}
+  </script>
   <!--radix_placeholder_navigation_in_header-->
-  <meta name="distill:offset" content=""/>
-
-  <script type="application/javascript">
-
-    window.headroom_prevent_pin = false;
-
-    window.document.addEventListener("DOMContentLoaded", function (event) {
-
-      // initialize headroom for banner
-      var header = $('header').get(0);
-      var headerHeight = header.offsetHeight;
-      var headroom = new Headroom(header, {
-        tolerance: 5,
-        onPin : function() {
-          if (window.headroom_prevent_pin) {
-            window.headroom_prevent_pin = false;
-            headroom.unpin();
-          }
-        }
-      });
-      headroom.init();
-      if(window.location.hash)
-        headroom.unpin();
-      $(header).addClass('headroom--transition');
-
-      // offset scroll location for banner on hash change
-      // (see: https://github.com/WickyNilliams/headroom.js/issues/38)
-      window.addEventListener("hashchange", function(event) {
-        window.scrollTo(0, window.pageYOffset - (headerHeight + 25));
-      });
-
-      // responsive menu
-      $('.distill-site-header').each(function(i, val) {
-        var topnav = $(this);
-        var toggle = topnav.find('.nav-toggle');
-        toggle.on('click', function() {
-          topnav.toggleClass('responsive');
-        });
-      });
-
-      // nav dropdowns
-      $('.nav-dropbtn').click(function(e) {
-        $(this).next('.nav-dropdown-content').toggleClass('nav-dropdown-active');
-        $(this).parent().siblings('.nav-dropdown')
-           .children('.nav-dropdown-content').removeClass('nav-dropdown-active');
-      });
-      $("body").click(function(e){
-        $('.nav-dropdown-content').removeClass('nav-dropdown-active');
-      });
-      $(".nav-dropdown").click(function(e){
-        e.stopPropagation();
-      });
-    });
-  </script>
-
-  <style type="text/css">
-
-  /* Theme (user-documented overrideables for nav appearance) */
-
-  .distill-site-nav {
-    color: rgba(255, 255, 255, 0.8);
-    background-color: #0F2E3D;
-    font-size: 15px;
-    font-weight: 300;
-  }
-
-  .distill-site-nav a {
-    color: inherit;
-    text-decoration: none;
-  }
-
-  .distill-site-nav a:hover {
-    color: white;
-  }
-
-  @media print {
-    .distill-site-nav {
-      display: none;
-    }
-  }
-
-  .distill-site-header {
-
-  }
-
-  .distill-site-footer {
-
-  }
-
-
-  /* Site Header */
-
-  .distill-site-header {
-    width: 100%;
-    box-sizing: border-box;
-    z-index: 3;
-  }
-
-  .distill-site-header .nav-left {
-    display: inline-block;
-    margin-left: 8px;
-  }
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header .nav-left {
-      margin-left: 0;
-    }
-  }
-
-
-  .distill-site-header .nav-right {
-    float: right;
-    margin-right: 8px;
-  }
-
-  .distill-site-header a,
-  .distill-site-header .title {
-    display: inline-block;
-    text-align: center;
-    padding: 14px 10px 14px 10px;
-  }
-
-  .distill-site-header .title {
-    font-size: 18px;
-    min-width: 150px;
-  }
-
-  .distill-site-header .logo {
-    padding: 0;
-  }
-
-  .distill-site-header .logo img {
-    display: none;
-    max-height: 20px;
-    width: auto;
-    margin-bottom: -4px;
-  }
-
-  .distill-site-header .nav-image img {
-    max-height: 18px;
-    width: auto;
-    display: inline-block;
-    margin-bottom: -3px;
-  }
-
-
-
-  @media screen and (min-width: 1000px) {
-    .distill-site-header .logo img {
-      display: inline-block;
-    }
-    .distill-site-header .nav-left {
-      margin-left: 20px;
-    }
-    .distill-site-header .nav-right {
-      margin-right: 20px;
-    }
-    .distill-site-header .title {
-      padding-left: 12px;
-    }
-  }
-
-
-  .distill-site-header .nav-toggle {
-    display: none;
-  }
-
-  .nav-dropdown {
-    display: inline-block;
-    position: relative;
-  }
-
-  .nav-dropdown .nav-dropbtn {
-    border: none;
-    outline: none;
-    color: rgba(255, 255, 255, 0.8);
-    padding: 16px 10px;
-    background-color: transparent;
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: inherit;
-    margin: 0;
-    margin-top: 1px;
-    z-index: 2;
-  }
-
-  .nav-dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 200px;
-    border: 1px solid rgba(0,0,0,0.15);
-    border-radius: 4px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
-    z-index: 1;
-    margin-top: 2px;
-    white-space: nowrap;
-    padding-top: 4px;
-    padding-bottom: 4px;
-  }
-
-  .nav-dropdown-content hr {
-    margin-top: 4px;
-    margin-bottom: 4px;
-    border: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  }
-
-  .nav-dropdown-active {
-    display: block;
-  }
-
-  .nav-dropdown-content a, .nav-dropdown-content .nav-dropdown-header {
-    color: black;
-    padding: 6px 24px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-
-  .nav-dropdown-content .nav-dropdown-header {
-    display: block;
-    padding: 5px 24px;
-    padding-bottom: 0;
-    text-transform: uppercase;
-    font-size: 14px;
-    color: #999999;
-    white-space: nowrap;
-  }
-
-  .nav-dropdown:hover .nav-dropbtn {
-    color: white;
-  }
-
-  .nav-dropdown-content a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-
-  .nav-right .nav-dropdown-content {
-    margin-left: -45%;
-    right: 0;
-  }
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header a, .distill-site-header .nav-dropdown  {display: none;}
-    .distill-site-header a.nav-toggle {
-      float: right;
-      display: block;
-    }
-    .distill-site-header .title {
-      margin-left: 0;
-    }
-    .distill-site-header .nav-right {
-      margin-right: 0;
-    }
-    .distill-site-header {
-      overflow: hidden;
-    }
-    .nav-right .nav-dropdown-content {
-      margin-left: 0;
-    }
-  }
-
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header.responsive {position: relative; min-height: 500px; }
-    .distill-site-header.responsive a.nav-toggle {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .distill-site-header.responsive a,
-    .distill-site-header.responsive .nav-dropdown {
-      display: block;
-      text-align: left;
-    }
-    .distill-site-header.responsive .nav-left,
-    .distill-site-header.responsive .nav-right {
-      width: 100%;
-    }
-    .distill-site-header.responsive .nav-dropdown {float: none;}
-    .distill-site-header.responsive .nav-dropdown-content {position: relative;}
-    .distill-site-header.responsive .nav-dropdown .nav-dropbtn {
-      display: block;
-      width: 100%;
-      text-align: left;
-    }
-  }
-
-  /* Site Footer */
-
-  .distill-site-footer {
-    width: 100%;
-    overflow: hidden;
-    box-sizing: border-box;
-    z-index: 3;
-    margin-top: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-align: center;
-  }
-
-  /* Headroom */
-
-  d-title {
-    padding-top: 6rem;
-  }
-
-  @media print {
-    d-title {
-      padding-top: 4rem;
-    }
-  }
-
-  .headroom {
-    z-index: 1000;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-
-  .headroom--transition {
-    transition: all .4s ease-in-out;
-  }
-
-  .headroom--unpinned {
-    top: -100px;
-  }
-
-  .headroom--pinned {
-    top: 0;
-  }
-
-  /* adjust viewport for navbar height */
-  /* helps vertically center bootstrap (non-distill) content */
-  .min-vh-100 {
-    min-height: calc(100vh - 100px) !important;
-  }
-
-  </style>
-
-  <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
-  <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
-  <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
-  <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
-  <script src="site_libs/autocomplete-0.37.1/autocomplete.min.js"></script>
-  <script src="site_libs/fuse-6.4.1/fuse.min.js"></script>
-
-  <script type="application/javascript">
-
-  function getMeta(metaName) {
-    var metas = document.getElementsByTagName('meta');
-    for (let i = 0; i < metas.length; i++) {
-      if (metas[i].getAttribute('name') === metaName) {
-        return metas[i].getAttribute('content');
-      }
-    }
-    return '';
-  }
-
-  function offsetURL(url) {
-    var offset = getMeta('distill:offset');
-    return offset ? offset + '/' + url : url;
-  }
-
-  function createFuseIndex() {
-
-    // create fuse index
-    var options = {
-      keys: [
-        { name: 'title', weight: 20 },
-        { name: 'categories', weight: 15 },
-        { name: 'description', weight: 10 },
-        { name: 'contents', weight: 5 },
-      ],
-      ignoreLocation: true,
-      threshold: 0
-    };
-    var fuse = new window.Fuse([], options);
-
-    // fetch the main search.json
-    return fetch(offsetURL('search.json'))
-      .then(function(response) {
-        if (response.status == 200) {
-          return response.json().then(function(json) {
-            // index main articles
-            json.articles.forEach(function(article) {
-              fuse.add(article);
-            });
-            // download collections and index their articles
-            return Promise.all(json.collections.map(function(collection) {
-              return fetch(offsetURL(collection)).then(function(response) {
-                if (response.status === 200) {
-                  return response.json().then(function(articles) {
-                    articles.forEach(function(article) {
-                      fuse.add(article);
-                    });
-                  })
-                } else {
-                  return Promise.reject(
-                    new Error('Unexpected status from search index request: ' +
-                              response.status)
-                  );
-                }
-              });
-            })).then(function() {
-              return fuse;
-            });
-          });
-
-        } else {
-          return Promise.reject(
-            new Error('Unexpected status from search index request: ' +
-                        response.status)
-          );
-        }
-      });
-  }
-
-  window.document.addEventListener("DOMContentLoaded", function (event) {
-
-    // get search element (bail if we don't have one)
-    var searchEl = window.document.getElementById('distill-search');
-    if (!searchEl)
-      return;
-
-    createFuseIndex()
-      .then(function(fuse) {
-
-        // make search box visible
-        searchEl.classList.remove('hidden');
-
-        // initialize autocomplete
-        var options = {
-          autoselect: true,
-          hint: false,
-          minLength: 2,
-        };
-        window.autocomplete(searchEl, options, [{
-          source: function(query, callback) {
-            const searchOptions = {
-              isCaseSensitive: false,
-              shouldSort: true,
-              minMatchCharLength: 2,
-              limit: 10,
-            };
-            var results = fuse.search(query, searchOptions);
-            callback(results
-              .map(function(result) { return result.item; })
-            );
-          },
-          templates: {
-            suggestion: function(suggestion) {
-              var img = suggestion.preview && Object.keys(suggestion.preview).length > 0
-                ? `<img src="${offsetURL(suggestion.preview)}"</img>`
-                : '';
-              var html = `
-                <div class="search-item">
-                  <h3>${suggestion.title}</h3>
-                  <div class="search-item-description">
-                    ${suggestion.description || ''}
-                  </div>
-                  <div class="search-item-preview">
-                    ${img}
-                  </div>
-                </div>
-              `;
-              return html;
-            }
-          }
-        }]).on('autocomplete:selected', function(event, suggestion) {
-          window.location.href = offsetURL(suggestion.path);
-        });
-        // remove inline display style on autocompleter (we want to
-        // manage responsive display via css)
-        $('.algolia-autocomplete').css("display", "");
-      })
-      .catch(function(error) {
-        console.log(error);
-      });
-
-  });
-
-  </script>
-
-  <style type="text/css">
-
-  .nav-search {
-    font-size: x-small;
-  }
-
-  /* Algolioa Autocomplete */
-
-  .algolia-autocomplete {
-    display: inline-block;
-    margin-left: 10px;
-    vertical-align: sub;
-    background-color: white;
-    color: black;
-    padding: 6px;
-    padding-top: 8px;
-    padding-bottom: 0;
-    border-radius: 6px;
-    border: 1px #0F2E3D solid;
-    width: 180px;
-  }
-
-
-  @media screen and (max-width: 768px) {
-    .distill-site-nav .algolia-autocomplete {
-      display: none;
-      visibility: hidden;
-    }
-    .distill-site-nav.responsive .algolia-autocomplete {
-      display: inline-block;
-      visibility: visible;
-    }
-    .distill-site-nav.responsive .algolia-autocomplete .aa-dropdown-menu {
-      margin-left: 0;
-      width: 400px;
-      max-height: 400px;
-    }
-  }
-
-  .algolia-autocomplete .aa-input, .algolia-autocomplete .aa-hint {
-    width: 90%;
-    outline: none;
-    border: none;
-  }
-
-  .algolia-autocomplete .aa-hint {
-    color: #999;
-  }
-  .algolia-autocomplete .aa-dropdown-menu {
-    width: 550px;
-    max-height: 70vh;
-    overflow-x: visible;
-    overflow-y: scroll;
-    padding: 5px;
-    margin-top: 3px;
-    margin-left: -150px;
-    background-color: #fff;
-    border-radius: 5px;
-    border: 1px solid #999;
-    border-top: none;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion {
-    cursor: pointer;
-    padding: 5px 4px;
-    border-bottom: 1px solid #eee;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion:last-of-type {
-    border-bottom: none;
-    margin-bottom: 2px;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item {
-    overflow: hidden;
-    font-size: 0.8em;
-    line-height: 1.4em;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item h3 {
-    font-size: 1rem;
-    margin-block-start: 0;
-    margin-block-end: 5px;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-description {
-    display: inline-block;
-    overflow: hidden;
-    height: 2.8em;
-    width: 80%;
-    margin-right: 4%;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview {
-    display: inline-block;
-    width: 15%;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img {
-    height: 3em;
-    width: auto;
-    display: none;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img[src] {
-    display: initial;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion.aa-cursor {
-    background-color: #eee;
-  }
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion em {
-    font-weight: bold;
-    font-style: normal;
-  }
-
-  </style>
-
-
   <!--/radix_placeholder_navigation_in_header-->
   <!--radix_placeholder_distill-->
 
@@ -2030,315 +1434,123 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </script>
 
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.10/header-attrs.js"></script>
-  <script src="site_libs/popper-2.6.0/popper.min.js"></script>
-  <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
-  <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
-  <script src="site_libs/tippy-6.2.7/tippy.umd.min.js"></script>
-  <script src="site_libs/anchor-4.2.2/anchor.min.js"></script>
-  <script src="site_libs/bowser-1.9.3/bowser.min.js"></script>
-  <script src="site_libs/webcomponents-2.0.0/webcomponents.js"></script>
-  <script src="site_libs/distill-2.2.21/template.v2.js"></script>
+  <script src="semantic-versioning-for-data-science-models_files/header-attrs-2.10/header-attrs.js"></script>
+  <script src="semantic-versioning-for-data-science-models_files/jquery-1.11.3/jquery.min.js"></script>
+  <script src="semantic-versioning-for-data-science-models_files/popper-2.6.0/popper.min.js"></script>
+  <link href="semantic-versioning-for-data-science-models_files/tippy-6.2.7/tippy.css" rel="stylesheet" />
+  <link href="semantic-versioning-for-data-science-models_files/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
+  <script src="semantic-versioning-for-data-science-models_files/tippy-6.2.7/tippy.umd.min.js"></script>
+  <script src="semantic-versioning-for-data-science-models_files/anchor-4.2.2/anchor.min.js"></script>
+  <script src="semantic-versioning-for-data-science-models_files/bowser-1.9.3/bowser.min.js"></script>
+  <script src="semantic-versioning-for-data-science-models_files/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="semantic-versioning-for-data-science-models_files/distill-2.2.21/template.v2.js"></script>
   <!--radix_placeholder_site_in_header-->
-  <script type="text/javascript" cookie-consent="tracking" async src="https://www.googletagmanager.com/gtag/js?id=UA-85616639-1"></script>
-  <script type="text/javascript" cookie-consent="tracking">
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-85616639-1');
-  </script>
   <!--/radix_placeholder_site_in_header-->
 
 
 </head>
 
-<body class="layout-listing">
+<body>
 
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Bryan Whiting's blog","authors":[]}
+{"title":"Semantic Versioning for Data Science Models","description":"Meaningful versioning for data science models and machine learning pipelines.","authors":[{"author":"Bryan Whiting","authorURL":{},"affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2018-07-02T00:00:00.000+00:00","citationText":"Whiting, 2018"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
 <!--radix_placeholder_navigation_before_body-->
-<header class="header header--fixed" role="banner">
-<nav class="distill-site-nav distill-site-header">
-<div class="nav-left">
-<a href="index.html" class="title">Bryan Whiting's blog</a>
-<input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
-</div>
-<div class="nav-right">
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
-</div>
-</nav>
-</header>
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
 <!--/radix_placeholder_site_before_body-->
-<!--radix_placeholder_article_listing-->
-
-
-<script type="application/javascript">
-
-function init_posts_list() {
-
-  function load_image(img) {
-    var src = $(img).attr('data-src');
-    if (src) {
-      $(img).attr('src', src);
-      $(img).load(function() {
-        img.removeAttribute('data-src');
-      });
-    }
-  }
-
-  function set_posts_visible(posts, visible) {
-    if (visible) {
-
-      // show bottom border by default
-      $(posts).removeClass('post-preview-last');
-
-      // apply limits if need be
-      var max_posts = 25;
-      var apply_limits = $('.posts-container').hasClass('posts-apply-limit');
-      if (apply_limits && posts.length > max_posts) {
-        posts = $(posts).slice(0, max_posts);
-      } else {
-        $('.posts-more a').addClass('hidden');
-      }
-
-      // apply last style
-      $(posts.slice(-1)[0]).addClass('post-preview-last');
-
-      $(posts).removeClass('hidden');
-      $(posts).find('img[data-src]').each(function(i, img) {
-        load_image(img);
-      });
-    } else {
-      $(posts).addClass('hidden');
-    }
-  }
-
-  function apply_hash_filter() {
-
-    // clear active state
-    $('.categories .active').removeClass('active');
-
-    // mark all posts invisible to start
-    set_posts_visible($('.posts-list').children('a'), false);
-
-    // if we have a hash filter
-    if (window.location.hash && window.location.hash.startsWith("#category:")) {
-
-      // mark posts that match the category visible
-      var page_category = window.location.hash.replace(/^#category:/, "");
-      var posts = $('.post-metadata').map(function(idx, script) {
-        var metadata = $.parseJSON($(script).html());
-        var post = null;
-        $.each(metadata.categories, function(idx, category) {
-          category = category.replace(/ /g,"_");
-          if ((page_category || '').toLowerCase() === "articles" || category === page_category) {
-            post = $(script).parent().get();
-            return false;
-          }
-        });
-        return post;
-      });
-      set_posts_visible(posts, true);
-
-      // mark the hash active
-      $('.categories li>a[href="' + window.location.hash + '"]').addClass('active');
-
-      // update the list_caption
-      var list_caption = $('.posts-list-caption');
-      var caption = (page_category || '').toLowerCase() === "articles"
-        ? list_caption.attr('data-caption')
-        : ('Category: ' + page_category.replace(/_/g," "));
-      list_caption.text(caption);
-
-    } else {
-
-      // no hash filter, make all posts visible (subject to max display)
-      set_posts_visible($('.posts-list').children(), true);
-
-      // reset list caption
-      var list_caption = $('.posts-list-caption');
-      list_caption.text(list_caption.attr('data-caption'));
-
-
-    }
-  }
-
-  // more articles
-  function apply_post_limits(apply) {
-    if (apply) {
-      $('.posts-container').addClass('posts-apply-limit');
-      $('.posts-more a').removeClass('hidden');
-    } else {
-      $('.posts-container').removeClass('posts-apply-limit');
-      $('.posts-more a').addClass('hidden');
-    }
-  }
-
-  // click handling for tags
-  $('.dt-tag').click(function(ev) {
-    window.location.hash = '#category:' + $(this).text().replace(/ /g, "_");
-    return false;
-  })
-
-  // hash filter handling
-  apply_hash_filter();
-  $(window).on('hashchange',function() {
-    apply_post_limits(true);
-    apply_hash_filter();
-  });
-
-  // more articles link
-  $('.posts-more a').click(function(e) {
-    e.preventDefault();
-    apply_post_limits(false);
-    apply_hash_filter();
-    return false;
-  });
-
-}
-
-</script>
-
-
-
-<div class="posts-container posts-with-sidebar posts-apply-limit l-screen-inset">
-<div class="posts-list">
-<h1 class="posts-list-caption" data-caption="Bryan Whiting&#39;s blog">Bryan Whiting's blog</h1>
-<a href="posts/2018-07-02-semantic-versioning-for-data-science-models/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["data science","machine learning"]}</script>
-<div class="metadata">
-<div class="publishedDate">July 2, 2018</div>
-<div class="dt-authors">
-<div class="dt-author">Bryan Whiting</div>
-</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>Semantic Versioning for Data Science Models</h2>
-<div class="dt-tags">
-<div class="dt-tag">data science</div>
-<div class="dt-tag">machine learning</div>
-</div>
-<p>Meaningful versioning for data science models and machine learning pipelines.</p>
-</div>
-</a>
-<a href="posts/2017-02-10-ggplot-plotly/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["dataviz","r","ggplot","plotly"]}</script>
-<div class="metadata">
-<div class="publishedDate">Feb. 10, 2017</div>
-<div class="dt-authors">
-<div class="dt-author">Bryan Whiting</div>
-</div>
-</div>
-<div class="thumbnail">
-<img src="posts/2017-02-10-ggplot-plotly/ggplot-plotly_files/figure-html5/unnamed-chunk-2-1.png"/>
-</div>
-<div class="description">
-<h2>The DataViz battle: Plotly vs ggplot2</h2>
-<div class="dt-tags">
-<div class="dt-tag">dataviz</div>
-<div class="dt-tag">r</div>
-<div class="dt-tag">ggplot</div>
-<div class="dt-tag">plotly</div>
-</div>
-<p></p>
-</div>
-</a>
-<a href="posts/2016-11-07-starting-with-jekyll/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["productivity","blogging","jekyll"]}</script>
-<div class="metadata">
-<div class="publishedDate">Nov. 7, 2016</div>
-<div class="dt-authors">
-<div class="dt-author">Bryan Whiting</div>
-</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>Starting with Jekyll</h2>
-<div class="dt-tags">
-<div class="dt-tag">productivity</div>
-<div class="dt-tag">blogging</div>
-<div class="dt-tag">jekyll</div>
-</div>
-<p></p>
-</div>
-</a>
-</div>
-<div class="posts-sidebar">
-<div class="sidebar-section categories">
-<h3>Categories</h3>
-<ul>
-<li>
-<a href="#category:articles">articles</a>
-<span class="category-count">(3)</span>
-</li>
-<li>
-<a href="#category:blogging">blogging</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:data_science">data science</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:dataviz">dataviz</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:ggplot">ggplot</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:jekyll">jekyll</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:machine_learning">machine learning</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:plotly">plotly</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:productivity">productivity</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:r">r</a>
-<span class="category-count">(1)</span>
-</li>
-</ul>
-</div>
-</div>
-<div class="posts-more">
-<a href="#">More articles &raquo;</a>
-</div>
-</div>
-<!--/radix_placeholder_article_listing-->
 
 <div class="d-title">
-<h1>Bryan Whiting’s blog</h1>
+<h1>Semantic Versioning for Data Science Models</h1>
 <!--radix_placeholder_categories-->
+<div class="dt-tags">
+<div class="dt=tag">data science</div>
+<div class="dt=tag">machine learning</div>
+</div>
 <!--/radix_placeholder_categories-->
-
+<p><p>Meaningful versioning for data science models and machine learning pipelines.</p></p>
 </div>
 
+<div class="d-byline">
+  Bryan Whiting true 
+  
+<br/>2018-07-02
+</div>
 
 <div class="d-article">
+<p>If you’ve ever wanted to tag your data science model, you’ve probably wondered how to version it. Which will it be: vx.4.1, v34.1231.51.21, or v91.x4.dev34? After reading about <em>semantic versioning</em>, I propose a method for versioning data science models.</p>
+<h1 id="semantic-versioning-for-software">Semantic Versioning for Software</h1>
+<p>Semantic versioning <a href="https://semver.org/">proposes the following</a>:</p>
+<blockquote>
+<p>Given a version number MAJOR.MINOR.PATCH, increment the:</p>
+<ol type="1">
+<li>MAJOR version when you make incompatible API changes,</li>
+<li>MINOR version when you add functionality in a backwards-compatible manner, and</li>
+<li>PATCH version when you make backwards-compatible bug fixes.</li>
+</ol>
+<p>Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format. Well, I don’t build APIs right now, but I think there is a way to apply this to the ways in which my software <em>does</em> change.</p>
+</blockquote>
+<h1 id="semantic-versioning-for-data-science-models">Semantic Versioning for Data Science Models</h1>
+<p>I propose that data science models use BETWEEN.WITHIN.PROCESS versioning, incrementing the</p>
+<ol type="1">
+<li>BETWEEN version when you have an incompatible data change or target variable change, which render your models incomparable to prior versions, the</li>
+<li>WITHIN version when you improve or enhance a model output, and the</li>
+<li>PROCESS version when you update a pipeline but it doesn’t ultimately improve the model.</li>
+</ol>
+<p>(Where BETWEEN implies ‘between model’ and WITHIN for ‘within model’.)</p>
+<h2 id="an-example">An Example</h2>
+<p>I build data science models by building python packages and committing the code to GitHub. The python package contains all of the support files and a <code>main.py</code> file to run the pipeline from start to finish. The support files could contain either helpful loggers to tell me where the pipeline is breaking down, diagnostic tools such as an AUC-ROC plot, files to engineer features, or files to train different model types. So there are really these three things that could happen to my code at any time. It doesn’t matter where those changes occur, or how many lines of code changed. What matters is what’s happened to the model. Each time I get a pull request approved, I’ll update the version number in my repo.</p>
+<h3 id="changing-between">Changing BETWEEN</h3>
+<p>Increment the BETWEEN version for the following changes:</p>
+<ul>
+<li>When the structure of your data changes</li>
+<li>If your target variable changes (how you coded it, or data that produced the target changed)</li>
+<li>The underlying population you’re training on changes</li>
+</ul>
+<p>Assume I discovered that I had a bad join. The join change might have been a minor one, but it’s now difficult to really compare the two models because my target was affected as a result. What I was predicting, even if slightly different, is now something different. If you ever feel like you’re comparing apples to oranges when looking at an AUC-ROC curve, update the BETWEEN version.</p>
+<p>With each BETWEEN change, there should be a clear communication in the release notes of why the model is inherently different from prior models. These changes should be less frequent.</p>
+<h3 id="changing-within">Changing WITHIN</h3>
+<p>Increment the WITHIN number when the following happens:</p>
+<ul>
+<li>Features are added</li>
+<li>Data sources are added or updated. (You might have several data sources today that help contribute to the target. But adding a data source might just mean adding new features. If you add data in such a way that it changes what you’re ultimately modeling, update the BETWEEN version.)</li>
+<li>New modeling types are added. (You might be using a logistic regression, but add a mo)</li>
+</ul>
+<p>So if I added files that allowed me to train different model types, or added files that engineered new features, I’d incrememnt the WITHIN version. In my mind, this shouldn’t be a <em>count</em> of features you include, but should just be incremented every time you do something that affects the model performance.</p>
+<p>At any time, you might what to view different subsets of features and their effect on the model. So, you might not change the number of features, but add some functionality into your pipeline that now produces three different models in each run. I would increment the WITHIN version number in that case.</p>
+<p>Remember, the goal of this type of versioning is to show generally what’s changed in your pipeline.</p>
+<h3 id="changing-process">Changing PROCESS</h3>
+<p>Increment the PROCESS version when the following happens:</p>
+<ul>
+<li>A minor bug is fixed (unless this updates BETWEEN or WITHIN)</li>
+<li>Enhance a logger or aspect of the pipeline</li>
+<li>Add a diagnostic plot or table</li>
+</ul>
+<p>Basically, any time you add something that doesn’t ultimately affect the performance of the model, you should update the PROCESS version. Your changes might improve the flow of your code and make you a much happier developer, but if it doesn’t improve the model, then the key priority of your code hasn’t improved.</p>
+<h1 id="final-thoughts">Final Thoughts</h1>
+<p>Ultimately, data science semantic versioning can help communicate to team members what has fundamentally changed between software versions. Easily, a manager, colleague, or model governance officer could see the following version numbers and be able to know generally what’s changed:</p>
+<ol type="1">
+<li><code>0.0.1</code>: Process improvement</li>
+<li><code>0.1.0</code>: Model improvement</li>
+<li><code>0.2.0</code>: Model improvement</li>
+<li><code>1.0.0</code>: Model change</li>
+<li><code>1.1.0</code>: Model improvement</li>
+<li><code>1.1.1</code>: Process improvement</li>
+</ol>
+<p>So what changed?</p>
+<ol type="1">
+<li><code>0.0.1</code>: Setting up the code base, but no model or features yet</li>
+<li><code>0.1.0</code>: Finished a model, or added some features</li>
+<li><code>0.2.0</code>: Added some features</li>
+<li><code>1.0.0</code>: Discovered a bug in the target variable, something was miscoded. What is being predicted now changes (but you still have all the old features!)</li>
+<li><code>1.1.0</code>: Added some new features</li>
+<li><code>1.1.1</code>: Added a new plot to assess the financial impact of the model, but model doesn’t inherently change.</li>
+</ol>
+<p>This type of versioning also ultimately encourages a more disciplined workflow. Each sets of commit should be focused on one task alone. Because every time you update a version number, numbers to the right should refresh to zero. That’s how the theory goes, at least.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
