@@ -1,6 +1,6 @@
 ---
 title: "Bryan Whiting"
-image: "tobi.jpg"
+image: img/profile.jpg
 links:
   - label: '`r fontawesome::fa("signature")` Blog'
     url: "https://www.bryanwhiting.com"
@@ -15,6 +15,10 @@ output:
 site: distill::distill_website
 ---
  
+```{r, echo=F, message=F}
+library(fontawesome)
+```
+ 
 ## Bio
 
 Data scientist with 7 years of experience building complex, large-scale data pipelines and inferential and machine learning models. Experience running online A/B experiments, managing complex compute infrastructure and confidently presenting to VP-level audiences. Passionate about innovation, creativity, tech, data, engineering, leadership, mentoring and team building. Former startup co-founder.
@@ -27,13 +31,70 @@ Data scientist with 7 years of experience building complex, large-scale data pip
 
 **Bates White Economic Consulting** | Analytics Consultant | Aug 2015 - Jul 2017
 
-**Novi Security** | Co-Founder | Jan 2013 – Aug 2014
+**Novi Security** | Co-Founder | Jan 2013 – Aug 2014 | `r fontawesome::fa("map-marker-alt")` Provo, UT
 
-## Education and Service
+## Education
 
-**Brigham Young University** | Provo, UT
+**Brigham Young University** | `r fontawesome::fa("map-marker-alt")` Provo, UT
 
 * M.S. in Statistics | September 2013 - May 2015
 * B.S. in Statistics | September 2008 - May 2015
-* Volunteer Service | Sept 2009-Aug 2011 | Honduras
 
+## Service
+
+* Full-time Volunteer Service | Sept 2009-Aug 2011 | `r fontawesome::fa("map-marker-alt")` Honduras
+
+<style>
+dl {
+    list-style-type: none;
+}
+dl:before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+
+dl > dt:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute; 
+    border-radius: 50%;
+    border: 3px solid black; /* #5e0900; /* was #22c0e8 */
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+}
+
+dl > dt, dl > dd {
+    margin: 6pt 0; /* was 20px */
+    padding-left: 60px;
+}
+</style>
+
+
+**Bates White Economic Consulting** | Analytics Consultant | Aug 2015 - Jul 2017
+
+**Novi Security** | Co-Founder | Jan 2013 – Aug 2014 | `r fontawesome::fa("map-marker-alt")` Provo, UT
+
+
+| &nbsp; | &nbsp;&nbsp; | &nbsp; |
+|---|---|---|
+| 2013/01 - 2015/08 | | **Novi Security**, Co-Founder
+| | | `r fontawesome::fa("map-marker-alt")` Provo, UT
+| 2013/01 - 2015/08 |  | **Novi Security**, Co-Founder
+| | | `r fontawesome::fa("map-marker-alt")` Provo, UT
+
+
+<dl>
+<dt><h3> 1066 </h3></dt>
+<dd> Harald Hardrada, King of Norway, invades England</dd>
+<dt><h5> **Novi Security** </h5> | Co-Founder | `r fa('calendar-alt')` Jan 2013 - Aug 2015 </dt>
+<dd> `r fontawesome::fa("map-marker-alt")` Provo, UT<br>Ate potatoes</dd>
+</dl>
