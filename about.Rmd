@@ -36,9 +36,10 @@ See [`r fontawesome::fa("linkedin")` LinkedIn](https://www.linkedin.com/in/bryan
 | | | Machine learning and ML data pipeline development, cloud compute (AWS), credit underwriting
 | | | `r fontawesome::fa("map-marker-alt")` Washington, D.C.
 | 2015/08 - 2017/07 | | [**Bates White Economic Consulting**](https://www.bateswhite.com/), Analytics Consultant
-| | | 
+| | | Anti-trust litigation, financial modeling, econometric analysis
 | | | `r fontawesome::fa("map-marker-alt")` Washington, D.C.
 | 2013/01 - 2014/08 |  | [**Novi Security**](https://www.novisecurity.com/), Co-Founder
+| | | Launched successful Kickstarter, raised seed round
 | | | `r fontawesome::fa("map-marker-alt")` Provo, UT
 
 ## Education and Service
