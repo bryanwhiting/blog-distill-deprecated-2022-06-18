@@ -18,83 +18,37 @@ site: distill::distill_website
 ```{r, echo=F, message=F}
 library(fontawesome)
 ```
+_Last Updated: 2021/09_
  
 ## Bio
 
 Data scientist with 7 years of experience building complex, large-scale data pipelines and inferential and machine learning models. Experience running online A/B experiments, managing complex compute infrastructure and confidently presenting to VP-level audiences. Passionate about innovation, creativity, tech, data, engineering, leadership, mentoring and team building. Former startup co-founder.
 
 ## Experience
-
-**Google Maps/YouTube** | Data Scientist, Engineering | Apr 2020 - Present
-
-**Capital One** | Data Scientist, Machine Learning | Jul 2017 - Mar 2020
-
-**Bates White Economic Consulting** | Analytics Consultant | Aug 2015 - Jul 2017
-
-**Novi Security** | Co-Founder | Jan 2013 – Aug 2014 | `r fontawesome::fa("map-marker-alt")` Provo, UT
-
-## Education
-
-**Brigham Young University** | `r fontawesome::fa("map-marker-alt")` Provo, UT
-
-* M.S. in Statistics | September 2013 - May 2015
-* B.S. in Statistics | September 2008 - May 2015
-
-## Service
-
-* Full-time Volunteer Service | Sept 2009-Aug 2011 | `r fontawesome::fa("map-marker-alt")` Honduras
-
-<style>
-dl {
-    list-style-type: none;
-}
-dl:before {
-    content: ' ';
-    background: #d4d9df;
-    display: inline-block;
-    position: absolute;
-    left: 29px;
-    width: 2px;
-    height: 100%;
-    z-index: 400;
-}
-
-dl > dt:before {
-    content: ' ';
-    background: white;
-    display: inline-block;
-    position: absolute; 
-    border-radius: 50%;
-    border: 3px solid black; /* #5e0900; /* was #22c0e8 */
-    left: 20px;
-    width: 20px;
-    height: 20px;
-    z-index: 400;
-}
-
-dl > dt, dl > dd {
-    margin: 6pt 0; /* was 20px */
-    padding-left: 60px;
-}
-</style>
-
-
-**Bates White Economic Consulting** | Analytics Consultant | Aug 2015 - Jul 2017
-
-**Novi Security** | Co-Founder | Jan 2013 – Aug 2014 | `r fontawesome::fa("map-marker-alt")` Provo, UT
-
+See [`r fontawesome::fa("linkedin")` LinkedIn](https://www.linkedin.com/in/bryan-whiting/) or [Resume](img/resume.pdf) for details.
 
 | &nbsp; | &nbsp;&nbsp; | &nbsp; |
 |---|---|---|
-| 2013/01 - 2015/08 | | **Novi Security**, Co-Founder
-| | | `r fontawesome::fa("map-marker-alt")` Provo, UT
-| 2013/01 - 2015/08 |  | **Novi Security**, Co-Founder
+| 2020/07 - Present | | [**Google: Maps, YouTube Music**](https://music.youtube.com), Data Scientist, Engineering
+| | | A/B testing, product insights, music recommendation system enhancements, marketing analytics, user-targeting and churn analysis
+| | | `r fontawesome::fa("map-marker-alt")` San Bruno, CA
+| 2017/07 - 2020/03 | | [**Capital One**](https://www.capitalone.com), Data Scientist
+| | | Machine learning and ML data pipeline development, cloud compute (AWS), credit underwriting
+| | | `r fontawesome::fa("map-marker-alt")` Washington, D.C.
+| 2015/08 - 2017/07 | | [**Bates White Economic Consulting**](https://www.bateswhite.com/), Analytics Consultant
+| | | 
+| | | `r fontawesome::fa("map-marker-alt")` Washington, D.C.
+| 2013/01 - 2014/08 |  | [**Novi Security**](https://www.novisecurity.com/), Co-Founder
 | | | `r fontawesome::fa("map-marker-alt")` Provo, UT
 
+## Education and Service
 
-<dl>
-<dt><h3> 1066 </h3></dt>
-<dd> Harald Hardrada, King of Norway, invades England</dd>
-<dt><h5> **Novi Security** </h5> | Co-Founder | `r fa('calendar-alt')` Jan 2013 - Aug 2015 </dt>
-<dd> `r fontawesome::fa("map-marker-alt")` Provo, UT<br>Ate potatoes</dd>
-</dl>
+| &nbsp; | &nbsp;&nbsp; | &nbsp; |
+|---|---|---|
+| 2013/08 - 2015/05 | | M.S. in Statistics, 
+| | | `r fontawesome::fa("map-marker-alt")` **Brigham Young University**, Provo, UT
+| 2008/08 - 2015/05 | | B.S. in Statistics, 
+| | | `r fontawesome::fa("map-marker-alt")` **Brigham Young University**, Provo, UT
+| 2009/08 - 2011/08 | | Full-time Humanitarian Service
+| | | `r fontawesome::fa("map-marker-alt")` Tegucigalpa, Honduras
+
