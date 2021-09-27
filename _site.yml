@@ -1,7 +1,7 @@
 name: "blog"
-title: "Bryan Whiting's Thoughts"
+title: "Bryan Whiting"
 description: |
-  My take on data, productivity, and life
+  My take on data, tech, and life
 output_dir: "docs"
 google_analytics: "UA-85616639-1"
 navbar:
