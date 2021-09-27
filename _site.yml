@@ -5,6 +5,7 @@ description: |
 output_dir: "docs"
 google_analytics: "UA-85616639-1"
 navbar:
+  search: true
   right:
     - text: "Blog"
       href: index.html
