@@ -110,9 +110,9 @@ tribble(
 
 | &nbsp; | &nbsp;&nbsp; | &nbsp; |
 |---|---|---|
-| 2013/08 - 2015/05 | | M.S. in Statistics, 
+| 2013/08 - 2015/05 | | M.S. in Statistic 
 | | | `r fontawesome::fa("map-marker-alt")` **Brigham Young University**, Provo, UT
-| 2008/08 - 2015/05 | | B.S. in Statistics, 
+| 2008/08 - 2015/05 | | B.S. in Statistics 
 | | | `r fontawesome::fa("map-marker-alt")` **Brigham Young University**, Provo, UT
 | 2009/08 - 2011/08 | | Full-time Humanitarian Service
 | | | `r fontawesome::fa("map-marker-alt")` Tegucigalpa, Honduras
