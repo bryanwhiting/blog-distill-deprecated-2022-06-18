@@ -1,12 +1,12 @@
 name: "blog"
-title: "Bryan Whiting's blog"
+title: "Bryan Whiting's Thoughts"
 description: |
-  Bryan Whiting's blog
+  My take on data, productivity, and life
 output_dir: "docs"
 google_analytics: "UA-85616639-1"
 navbar:
   right:
-    - text: "Home"
+    - text: "Blog"
       href: index.html
     - text: "About"
       href: about.html
