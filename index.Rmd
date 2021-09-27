@@ -3,3 +3,22 @@ title: "Blog"
 site: distill::distill_website
 listing: posts
 ---
+
+
+```{r, include=FALSE, results='asis'}
+library(metathis)
+# TODO: ADD METADATA https://themockup.blog/posts/2021-03-21-including-and-meta-tagging-extra-content-in-a-distill-blog/
+
+meta() %>%
+  meta_social(
+    title = "Bryan Whiting",
+    description = "Bryan's take on data, tech, and life",
+    url = "https://www.bryanwhiting.com/",
+    # image = "https://raw.githubusercontent.com/jthomasmock/radix_themockup/master/static/logo-plot.png",
+    # image_alt = "Chaos into tidy code",
+    og_type = "website",
+    og_author = "Bryan Whiting",
+    twitter_card_type = "summary",
+    twitter_creator = "@bryanwhiting"
+  )
+```
