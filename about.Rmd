@@ -18,7 +18,7 @@ site: distill::distill_website
 ```{r, echo=F, message=F}
 library(fontawesome)
 ```
-_Last Updated: 2021/09_
+_Last updated: `r Sys.Date()`_
  
 ## Bio
 
