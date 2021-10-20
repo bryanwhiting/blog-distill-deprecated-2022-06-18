@@ -5,8 +5,6 @@ description: |
 date: 2018-07-02
 author:
   - name: Bryan Whiting
-    url: {}
-slug: semantic-versioning-for-data-science-models
 categories: 
   - data science
   - machine learning

@@ -2,6 +2,8 @@ name: "blog"
 title: "Bryan Whiting"
 description: |
   My take on data, tech, and life
+# base_url: https://bryanwhiting.github.io/blog
+# base_url: https://www.bryanwhiting.com
 output_dir: "docs"
 google_analytics: "UA-85616639-1"
 navbar:
@@ -10,5 +12,8 @@ navbar:
     - text: "Blog"
       href: index.html
     - text: "About"
-      href: about.html
+      href: aboutdahtml
+  source_url: https://github.com/bryanwhiting/blog
+rss:
+  full_content: true
 output: distill::distill_article

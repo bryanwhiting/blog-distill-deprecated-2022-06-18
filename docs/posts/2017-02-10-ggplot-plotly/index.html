@@ -1867,7 +1867,10 @@ function init_distill() {
 
     // hoverable references
     $('span.citation[data-cites]').each(function() {
-      var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
+      var refs = $(this).attr('data-cites').split(" ");
+      var refHtml = refs.map(function(ref) {
+        return "<p>" + $('#ref-' + ref).html() + "</p>";
+      }).join("\n");
       window.tippy(this, {
         allowHTML: true,
         content: refHtml,
@@ -2086,7 +2089,10 @@ gtag('config', 'UA-85616639-1');
 </div>
 <div class="nav-right">
 <a href="../../index.html">Blog</a>
-<a href="../../about.html">About</a>
+<a href="../../aboutdahtml">About</a>
+<a href="https://github.com/bryanwhiting/blog" aria-label="Link to source">
+<i class="fab fa-github" aria-hidden="true"></i>
+</a>
 <a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
 </div>
 </nav>
