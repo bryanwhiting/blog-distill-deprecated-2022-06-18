@@ -12,7 +12,7 @@ navbar:
     - text: "Blog"
       href: index.html
     - text: "About"
-      href: aboutdahtml
+      href: about.html
   source_url: https://github.com/bryanwhiting/blog
 rss:
   full_content: true

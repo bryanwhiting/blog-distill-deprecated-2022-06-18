@@ -25,6 +25,7 @@ _Last updated: `r Sys.Date()`_
 Data scientist with 7 years of experience building complex, large-scale data pipelines and inferential and machine learning models. Experience running online A/B experiments, managing complex compute infrastructure and confidently presenting to VP-level audiences. Passionate about innovation, creativity, tech, data, engineering, leadership, mentoring and team building. Former startup co-founder.
 
 ## Experience
+
 See [`r fontawesome::fa("linkedin")` LinkedIn](https://www.linkedin.com/in/bryan-whiting/) or [Resume](resume.pdf) for details.
 <!-- | &nbsp; | &nbsp;&nbsp; | &nbsp; | -->
 <!-- |---|---|---| -->
@@ -38,7 +39,7 @@ See [`r fontawesome::fa("linkedin")` LinkedIn](https://www.linkedin.com/in/bryan
 <!-- | 2013/01 - 2014/08 |  | [**Novi Security**](https://www.novisecurity.com/), Co-Founder -->
 <!-- | | | `r fontawesome::fa("map-marker-alt")` Provo, UT -->
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, warning=F, message = F}
 library(gt)
 library(dplyr)
 library(glue)
@@ -76,7 +77,7 @@ tribble(
   "https://www.novisecurity.com",
   "Co-founder",
   "Washington, D.C.",
-  "Innovative, wireless home security. Top 2% Kickstarter, raised seed round"
+  "Innovative, wireless home security. Top 2% Kickstarter. Successfully raised seed round of investment"
 ) %>%
   # mutate(
   #   company = glue("<a href='{url}'>{company}</a>")

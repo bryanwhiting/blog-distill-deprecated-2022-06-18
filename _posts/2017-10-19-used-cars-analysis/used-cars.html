@@ -87,642 +87,36 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--radix_placeholder_meta_tags-->
-  <title>Bryan Whiting: Why I Write</title>
+  <title>Buying a used car the data science way: Part 2</title>
 
-  <meta property="description" itemprop="description" content="Some additional details about the blog"/>
 
 
   <!--  https://schema.org/Article -->
-  <meta property="article:published" itemprop="datePublished" content="2017-06-23"/>
-  <meta property="article:created" itemprop="dateCreated" content="2017-06-23"/>
+  <meta property="article:published" itemprop="datePublished" content="2017-02-19"/>
+  <meta property="article:created" itemprop="dateCreated" content="2017-02-19"/>
   <meta name="article:author" content="Bryan Whiting"/>
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Bryan Whiting: Why I Write"/>
+  <meta property="og:title" content="Buying a used car the data science way: Part 2"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content="Some additional details about the blog"/>
   <meta property="og:locale" content="en_US"/>
-  <meta property="og:site_name" content="Bryan Whiting"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Bryan Whiting: Why I Write"/>
-  <meta property="twitter:description" content="Some additional details about the blog"/>
+  <meta property="twitter:title" content="Buying a used car the data science way: Part 2"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","author","description","date","showthedate"]}},"value":[{"type":"character","attributes":{},"value":["Why I Write"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Bryan Whiting"]}]}]},{"type":"character","attributes":{},"value":["Some additional details about the blog\n"]},{"type":"character","attributes":{},"value":["2017-06-23"]},{"type":"logical","attributes":{},"value":[false]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","author","date","output","categories"]}},"value":[{"type":"character","attributes":{},"value":["Buying a used car the data science way: Part 2"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Bryan Whiting"]}]}]},{"type":"character","attributes":{},"value":["2017-02-19"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]},{"type":"character","attributes":{},"value":["webscraping","r","regression","analysis","pricing","buying things"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
+  
+  <script type="text/json" id="radix-resource-manifest">
+  {"type":"character","attributes":{},"value":["used-cars_files/anchor-4.2.2/anchor.min.js","used-cars_files/bowser-1.9.3/bowser.min.js","used-cars_files/distill-2.2.21/template.v2.js","used-cars_files/header-attrs-2.11/header-attrs.js","used-cars_files/jquery-3.6.0/jquery-3.6.0.js","used-cars_files/jquery-3.6.0/jquery-3.6.0.min.js","used-cars_files/jquery-3.6.0/jquery-3.6.0.min.map","used-cars_files/popper-2.6.0/popper.min.js","used-cars_files/tippy-6.2.7/tippy-bundle.umd.min.js","used-cars_files/tippy-6.2.7/tippy-light-border.css","used-cars_files/tippy-6.2.7/tippy.css","used-cars_files/tippy-6.2.7/tippy.umd.min.js","used-cars_files/webcomponents-2.0.0/webcomponents.js"]}
+  </script>
   <!--radix_placeholder_navigation_in_header-->
-  <meta name="distill:offset" content=""/>
-
-  <script type="application/javascript">
-
-    window.headroom_prevent_pin = false;
-
-    window.document.addEventListener("DOMContentLoaded", function (event) {
-
-      // initialize headroom for banner
-      var header = $('header').get(0);
-      var headerHeight = header.offsetHeight;
-      var headroom = new Headroom(header, {
-        tolerance: 5,
-        onPin : function() {
-          if (window.headroom_prevent_pin) {
-            window.headroom_prevent_pin = false;
-            headroom.unpin();
-          }
-        }
-      });
-      headroom.init();
-      if(window.location.hash)
-        headroom.unpin();
-      $(header).addClass('headroom--transition');
-
-      // offset scroll location for banner on hash change
-      // (see: https://github.com/WickyNilliams/headroom.js/issues/38)
-      window.addEventListener("hashchange", function(event) {
-        window.scrollTo(0, window.pageYOffset - (headerHeight + 25));
-      });
-
-      // responsive menu
-      $('.distill-site-header').each(function(i, val) {
-        var topnav = $(this);
-        var toggle = topnav.find('.nav-toggle');
-        toggle.on('click', function() {
-          topnav.toggleClass('responsive');
-        });
-      });
-
-      // nav dropdowns
-      $('.nav-dropbtn').click(function(e) {
-        $(this).next('.nav-dropdown-content').toggleClass('nav-dropdown-active');
-        $(this).parent().siblings('.nav-dropdown')
-           .children('.nav-dropdown-content').removeClass('nav-dropdown-active');
-      });
-      $("body").click(function(e){
-        $('.nav-dropdown-content').removeClass('nav-dropdown-active');
-      });
-      $(".nav-dropdown").click(function(e){
-        e.stopPropagation();
-      });
-    });
-  </script>
-
-  <style type="text/css">
-
-  /* Theme (user-documented overrideables for nav appearance) */
-
-  .distill-site-nav {
-    color: rgba(255, 255, 255, 0.8);
-    background-color: #0F2E3D;
-    font-size: 15px;
-    font-weight: 300;
-  }
-
-  .distill-site-nav a {
-    color: inherit;
-    text-decoration: none;
-  }
-
-  .distill-site-nav a:hover {
-    color: white;
-  }
-
-  @media print {
-    .distill-site-nav {
-      display: none;
-    }
-  }
-
-  .distill-site-header {
-
-  }
-
-  .distill-site-footer {
-
-  }
-
-
-  /* Site Header */
-
-  .distill-site-header {
-    width: 100%;
-    box-sizing: border-box;
-    z-index: 3;
-  }
-
-  .distill-site-header .nav-left {
-    display: inline-block;
-    margin-left: 8px;
-  }
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header .nav-left {
-      margin-left: 0;
-    }
-  }
-
-
-  .distill-site-header .nav-right {
-    float: right;
-    margin-right: 8px;
-  }
-
-  .distill-site-header a,
-  .distill-site-header .title {
-    display: inline-block;
-    text-align: center;
-    padding: 14px 10px 14px 10px;
-  }
-
-  .distill-site-header .title {
-    font-size: 18px;
-    min-width: 150px;
-  }
-
-  .distill-site-header .logo {
-    padding: 0;
-  }
-
-  .distill-site-header .logo img {
-    display: none;
-    max-height: 20px;
-    width: auto;
-    margin-bottom: -4px;
-  }
-
-  .distill-site-header .nav-image img {
-    max-height: 18px;
-    width: auto;
-    display: inline-block;
-    margin-bottom: -3px;
-  }
-
-
-
-  @media screen and (min-width: 1000px) {
-    .distill-site-header .logo img {
-      display: inline-block;
-    }
-    .distill-site-header .nav-left {
-      margin-left: 20px;
-    }
-    .distill-site-header .nav-right {
-      margin-right: 20px;
-    }
-    .distill-site-header .title {
-      padding-left: 12px;
-    }
-  }
-
-
-  .distill-site-header .nav-toggle {
-    display: none;
-  }
-
-  .nav-dropdown {
-    display: inline-block;
-    position: relative;
-  }
-
-  .nav-dropdown .nav-dropbtn {
-    border: none;
-    outline: none;
-    color: rgba(255, 255, 255, 0.8);
-    padding: 16px 10px;
-    background-color: transparent;
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: inherit;
-    margin: 0;
-    margin-top: 1px;
-    z-index: 2;
-  }
-
-  .nav-dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 200px;
-    border: 1px solid rgba(0,0,0,0.15);
-    border-radius: 4px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
-    z-index: 1;
-    margin-top: 2px;
-    white-space: nowrap;
-    padding-top: 4px;
-    padding-bottom: 4px;
-  }
-
-  .nav-dropdown-content hr {
-    margin-top: 4px;
-    margin-bottom: 4px;
-    border: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  }
-
-  .nav-dropdown-active {
-    display: block;
-  }
-
-  .nav-dropdown-content a, .nav-dropdown-content .nav-dropdown-header {
-    color: black;
-    padding: 6px 24px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-
-  .nav-dropdown-content .nav-dropdown-header {
-    display: block;
-    padding: 5px 24px;
-    padding-bottom: 0;
-    text-transform: uppercase;
-    font-size: 14px;
-    color: #999999;
-    white-space: nowrap;
-  }
-
-  .nav-dropdown:hover .nav-dropbtn {
-    color: white;
-  }
-
-  .nav-dropdown-content a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-
-  .nav-right .nav-dropdown-content {
-    margin-left: -45%;
-    right: 0;
-  }
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header a, .distill-site-header .nav-dropdown  {display: none;}
-    .distill-site-header a.nav-toggle {
-      float: right;
-      display: block;
-    }
-    .distill-site-header .title {
-      margin-left: 0;
-    }
-    .distill-site-header .nav-right {
-      margin-right: 0;
-    }
-    .distill-site-header {
-      overflow: hidden;
-    }
-    .nav-right .nav-dropdown-content {
-      margin-left: 0;
-    }
-  }
-
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header.responsive {position: relative; min-height: 500px; }
-    .distill-site-header.responsive a.nav-toggle {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .distill-site-header.responsive a,
-    .distill-site-header.responsive .nav-dropdown {
-      display: block;
-      text-align: left;
-    }
-    .distill-site-header.responsive .nav-left,
-    .distill-site-header.responsive .nav-right {
-      width: 100%;
-    }
-    .distill-site-header.responsive .nav-dropdown {float: none;}
-    .distill-site-header.responsive .nav-dropdown-content {position: relative;}
-    .distill-site-header.responsive .nav-dropdown .nav-dropbtn {
-      display: block;
-      width: 100%;
-      text-align: left;
-    }
-  }
-
-  /* Site Footer */
-
-  .distill-site-footer {
-    width: 100%;
-    overflow: hidden;
-    box-sizing: border-box;
-    z-index: 3;
-    margin-top: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-align: center;
-  }
-
-  /* Headroom */
-
-  d-title {
-    padding-top: 6rem;
-  }
-
-  @media print {
-    d-title {
-      padding-top: 4rem;
-    }
-  }
-
-  .headroom {
-    z-index: 1000;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-
-  .headroom--transition {
-    transition: all .4s ease-in-out;
-  }
-
-  .headroom--unpinned {
-    top: -100px;
-  }
-
-  .headroom--pinned {
-    top: 0;
-  }
-
-  /* adjust viewport for navbar height */
-  /* helps vertically center bootstrap (non-distill) content */
-  .min-vh-100 {
-    min-height: calc(100vh - 100px) !important;
-  }
-
-  </style>
-
-  <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-  <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
-  <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
-  <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
-  <script src="site_libs/autocomplete-0.37.1/autocomplete.min.js"></script>
-  <script src="site_libs/fuse-6.4.1/fuse.min.js"></script>
-
-  <script type="application/javascript">
-
-  function getMeta(metaName) {
-    var metas = document.getElementsByTagName('meta');
-    for (let i = 0; i < metas.length; i++) {
-      if (metas[i].getAttribute('name') === metaName) {
-        return metas[i].getAttribute('content');
-      }
-    }
-    return '';
-  }
-
-  function offsetURL(url) {
-    var offset = getMeta('distill:offset');
-    return offset ? offset + '/' + url : url;
-  }
-
-  function createFuseIndex() {
-
-    // create fuse index
-    var options = {
-      keys: [
-        { name: 'title', weight: 20 },
-        { name: 'categories', weight: 15 },
-        { name: 'description', weight: 10 },
-        { name: 'contents', weight: 5 },
-      ],
-      ignoreLocation: true,
-      threshold: 0
-    };
-    var fuse = new window.Fuse([], options);
-
-    // fetch the main search.json
-    return fetch(offsetURL('search.json'))
-      .then(function(response) {
-        if (response.status == 200) {
-          return response.json().then(function(json) {
-            // index main articles
-            json.articles.forEach(function(article) {
-              fuse.add(article);
-            });
-            // download collections and index their articles
-            return Promise.all(json.collections.map(function(collection) {
-              return fetch(offsetURL(collection)).then(function(response) {
-                if (response.status === 200) {
-                  return response.json().then(function(articles) {
-                    articles.forEach(function(article) {
-                      fuse.add(article);
-                    });
-                  })
-                } else {
-                  return Promise.reject(
-                    new Error('Unexpected status from search index request: ' +
-                              response.status)
-                  );
-                }
-              });
-            })).then(function() {
-              return fuse;
-            });
-          });
-
-        } else {
-          return Promise.reject(
-            new Error('Unexpected status from search index request: ' +
-                        response.status)
-          );
-        }
-      });
-  }
-
-  window.document.addEventListener("DOMContentLoaded", function (event) {
-
-    // get search element (bail if we don't have one)
-    var searchEl = window.document.getElementById('distill-search');
-    if (!searchEl)
-      return;
-
-    createFuseIndex()
-      .then(function(fuse) {
-
-        // make search box visible
-        searchEl.classList.remove('hidden');
-
-        // initialize autocomplete
-        var options = {
-          autoselect: true,
-          hint: false,
-          minLength: 2,
-        };
-        window.autocomplete(searchEl, options, [{
-          source: function(query, callback) {
-            const searchOptions = {
-              isCaseSensitive: false,
-              shouldSort: true,
-              minMatchCharLength: 2,
-              limit: 10,
-            };
-            var results = fuse.search(query, searchOptions);
-            callback(results
-              .map(function(result) { return result.item; })
-            );
-          },
-          templates: {
-            suggestion: function(suggestion) {
-              var img = suggestion.preview && Object.keys(suggestion.preview).length > 0
-                ? `<img src="${offsetURL(suggestion.preview)}"</img>`
-                : '';
-              var html = `
-                <div class="search-item">
-                  <h3>${suggestion.title}</h3>
-                  <div class="search-item-description">
-                    ${suggestion.description || ''}
-                  </div>
-                  <div class="search-item-preview">
-                    ${img}
-                  </div>
-                </div>
-              `;
-              return html;
-            }
-          }
-        }]).on('autocomplete:selected', function(event, suggestion) {
-          window.location.href = offsetURL(suggestion.path);
-        });
-        // remove inline display style on autocompleter (we want to
-        // manage responsive display via css)
-        $('.algolia-autocomplete').css("display", "");
-      })
-      .catch(function(error) {
-        console.log(error);
-      });
-
-  });
-
-  </script>
-
-  <style type="text/css">
-
-  .nav-search {
-    font-size: x-small;
-  }
-
-  /* Algolioa Autocomplete */
-
-  .algolia-autocomplete {
-    display: inline-block;
-    margin-left: 10px;
-    vertical-align: sub;
-    background-color: white;
-    color: black;
-    padding: 6px;
-    padding-top: 8px;
-    padding-bottom: 0;
-    border-radius: 6px;
-    border: 1px #0F2E3D solid;
-    width: 180px;
-  }
-
-
-  @media screen and (max-width: 768px) {
-    .distill-site-nav .algolia-autocomplete {
-      display: none;
-      visibility: hidden;
-    }
-    .distill-site-nav.responsive .algolia-autocomplete {
-      display: inline-block;
-      visibility: visible;
-    }
-    .distill-site-nav.responsive .algolia-autocomplete .aa-dropdown-menu {
-      margin-left: 0;
-      width: 400px;
-      max-height: 400px;
-    }
-  }
-
-  .algolia-autocomplete .aa-input, .algolia-autocomplete .aa-hint {
-    width: 90%;
-    outline: none;
-    border: none;
-  }
-
-  .algolia-autocomplete .aa-hint {
-    color: #999;
-  }
-  .algolia-autocomplete .aa-dropdown-menu {
-    width: 550px;
-    max-height: 70vh;
-    overflow-x: visible;
-    overflow-y: scroll;
-    padding: 5px;
-    margin-top: 3px;
-    margin-left: -150px;
-    background-color: #fff;
-    border-radius: 5px;
-    border: 1px solid #999;
-    border-top: none;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion {
-    cursor: pointer;
-    padding: 5px 4px;
-    border-bottom: 1px solid #eee;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion:last-of-type {
-    border-bottom: none;
-    margin-bottom: 2px;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item {
-    overflow: hidden;
-    font-size: 0.8em;
-    line-height: 1.4em;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item h3 {
-    font-size: 1rem;
-    margin-block-start: 0;
-    margin-block-end: 5px;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-description {
-    display: inline-block;
-    overflow: hidden;
-    height: 2.8em;
-    width: 80%;
-    margin-right: 4%;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview {
-    display: inline-block;
-    width: 15%;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img {
-    height: 3em;
-    width: auto;
-    display: none;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img[src] {
-    display: initial;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion.aa-cursor {
-    background-color: #eee;
-  }
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion em {
-    font-weight: bold;
-    font-style: normal;
-  }
-
-  </style>
-
-
   <!--/radix_placeholder_navigation_in_header-->
   <!--radix_placeholder_distill-->
 
@@ -2041,23 +1435,17 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </script>
 
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
-  <script src="site_libs/popper-2.6.0/popper.min.js"></script>
-  <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
-  <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
-  <script src="site_libs/tippy-6.2.7/tippy.umd.min.js"></script>
-  <script src="site_libs/anchor-4.2.2/anchor.min.js"></script>
-  <script src="site_libs/bowser-1.9.3/bowser.min.js"></script>
-  <script src="site_libs/webcomponents-2.0.0/webcomponents.js"></script>
-  <script src="site_libs/distill-2.2.21/template.v2.js"></script>
+  <script src="used-cars_files/header-attrs-2.11/header-attrs.js"></script>
+  <script src="used-cars_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+  <script src="used-cars_files/popper-2.6.0/popper.min.js"></script>
+  <link href="used-cars_files/tippy-6.2.7/tippy.css" rel="stylesheet" />
+  <link href="used-cars_files/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
+  <script src="used-cars_files/tippy-6.2.7/tippy.umd.min.js"></script>
+  <script src="used-cars_files/anchor-4.2.2/anchor.min.js"></script>
+  <script src="used-cars_files/bowser-1.9.3/bowser.min.js"></script>
+  <script src="used-cars_files/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="used-cars_files/distill-2.2.21/template.v2.js"></script>
   <!--radix_placeholder_site_in_header-->
-  <script type="text/javascript" cookie-consent="tracking" async src="https://www.googletagmanager.com/gtag/js?id=UA-85616639-1"></script>
-  <script type="text/javascript" cookie-consent="tracking">
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-85616639-1');
-  </script>
   <!--/radix_placeholder_site_in_header-->
 
 
@@ -2068,53 +1456,177 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Why I Write","description":"Some additional details about the blog","authors":[{"author":"Bryan Whiting","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2017-06-23T00:00:00.000+00:00","citationText":"Whiting, 2017"}
+{"title":"Buying a used car the data science way: Part 2","authors":[{"author":"Bryan Whiting","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2017-02-19T00:00:00.000+00:00","citationText":"Whiting, 2017"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
 <!--radix_placeholder_navigation_before_body-->
-<header class="header header--fixed" role="banner">
-<nav class="distill-site-nav distill-site-header">
-<div class="nav-left">
-<a href="index.html" class="title">Bryan Whiting</a>
-<input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
-</div>
-<div class="nav-right">
-<a href="index.html">Blog</a>
-<a href="aboutdahtml">About</a>
-<a href="https://github.com/bryanwhiting/blog" aria-label="Link to source">
-<i class="fab fa-github" aria-hidden="true"></i>
-</a>
-<a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
-</div>
-</nav>
-</header>
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Why I Write</h1>
+<h1>Buying a used car the data science way: Part 2</h1>
 <!--radix_placeholder_categories-->
+<div class="dt-tags">
+<div class="dt=tag">webscraping</div>
+<div class="dt=tag">r</div>
+<div class="dt=tag">regression</div>
+<div class="dt=tag">analysis</div>
+<div class="dt=tag">pricing</div>
+<div class="dt=tag">buying things</div>
+</div>
 <!--/radix_placeholder_categories-->
-<p><p>Some additional details about the blog</p></p>
+
 </div>
 
 <div class="d-byline">
   
   Bryan Whiting
   
-<br/>2017-06-23
+<br/>2017-02-19
 </div>
 
 <div class="d-article">
-<p>I want to share. I believe that writing is a process where scrambled thoughts can be converted into shareable information.</p>
-<p>In math, processes are called functions. In writing, my thoughts are the inputs, writing is the function, and this post is my output. In statistics, the truth is unattainable, only estimable. Writing is the function that uses my thoughts to estimate truth. And bias is the distance from the truth. In reading my writing, there are two biases at play for you: my writing’s distance from the truth and your distance from understanding my writing. I hope by writing often I can reduce both sources of bias. Better writing means better sharing, and sharing truth helps us both.</p>
-<p>My hope is that those who read this blog will take away from it a portion of what I’ve gained from others. It’s likely that this blog is more valueable for me than it is for you, but I hope that what I’ve learned can help. If it does, please share.</p>
-<h1 id="about-me">About me</h1>
-<p>I received a BS and MS in Statistics from Brigham Young University. During that time, I first learned to code in R and SAS. Since then, I’ve learned Stata, Excel Visual Basic for Applications (VBA), Python, [vi], and [RShiny]. I love to build innovative products, work with data, learn something new, and share what I learn.</p>
-<p>In my spare time, I enjoy guitar, drawing, and learning golf. If I had snow nearby, I would ski it.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<p><em>[Update 2021-11-16] This analysis was originally written on my old blog <a href="https://htmlpreview.github.io/?https://github.com/bryanwhiting/blog_deprecated/blob/master/content/post/2017-10-19-buying-a-used-car-the-data-science-way.html">here</a>. You can find the source code for it <a href="https://github.com/bryanwhiting/blog_deprecated/blob/master/content/post/2017-10-19-buying-a-used-car-the-data-science-way.Rmd">here</a>.</em></p>
+<p>This is part 2 out of a two-part series on scraping used car data. Check out <a href="../2017-10-18-used-cars-scrape/index.html">part 1</a> to learn how to scrape the data.</p>
+<h2 id="youre-in-the-market">You’re in the market</h2>
+<p>So you want to buy a car, but you don’t know anything about them? Welcome to my life.</p>
+<p>You show up at the dealer and there’s a sticker on the window. You know the difference between make and model, but you soon learn what a trim is. Some versions come with leather. Some have a sun roof. Some have all wheel drive. Some have 20k in miles, and a similarly priced car in a higher trim is at 40k miles. How do you know what you’re really paying for, and what these features are worth? And how do you know what it’ll be worth when it’s four years older and has an additional 40k miles?</p>
+<p>Pretty advanced questions for someone who just learned what a powertrain is.</p>
+<p>In this analysis, I’ll dive into how you can use data to learn a lot about an industry in a short amount of time. I’ll first dive into knowing what you’re buying (now and later). Then, I’ll dive into how Truecar and others might be finding their ‘deals’.</p>
+<h2 id="what-am-i-paying-for">What am I paying for?</h2>
+<p>To do any analysis, you need data. Please see my most recent post if you’re interested in learning how I got the data for this analysis. Suffice it to say, I webscraped it. The data is not my own, but belongs to Truecar.</p>
+<p>I love using linear regression to understand my data on a granular level. In my data set, I was able to extract the make, model, year, mileage, trim, and a flag for whether the car was all wheel drive (awd == 1) or not. Putting this data into a linear regression, we can see some interesting results. First let’s look at the data we have:</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://dplyr.tidyverse.org'>dplyr</a></span><span class='op'>)</span>
+<span class='fu'><a href='https://rdrr.io/r/base/load.html'>load</a></span><span class='op'>(</span><span class='st'>'../../data/used-car/tc-ford-edge.Rda'</span><span class='op'>)</span>
+<span class='co'># Get the prices into the appropriate scale and remove some extraneous</span>
+<span class='va'>df</span><span class='op'>$</span><span class='va'>price</span> <span class='op'>=</span> <span class='va'>df</span><span class='op'>$</span><span class='va'>price</span><span class='op'>*</span><span class='fl'>1000</span>
+<span class='va'>df</span> <span class='op'>%&gt;%</span> <span class='fu'><a href='https://dplyr.tidyverse.org/reference/select.html'>select</a></span><span class='op'>(</span><span class='op'>-</span><span class='va'>stats</span>, <span class='op'>-</span><span class='va'>url</span>, <span class='op'>-</span><span class='va'>int</span>, <span class='op'>-</span><span class='va'>vin</span>, <span class='op'>-</span><span class='va'>v6</span>, <span class='op'>-</span><span class='va'>trueprice</span>, <span class='op'>-</span><span class='va'>resid</span><span class='op'>)</span> <span class='op'>%&gt;%</span> <span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span><span class='op'>(</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
+<pre><code>##   price year mileage trim awd        location                   ext deal
+## 1 16000 2014  28.477   SE   1    Sterling, VA                  &lt;NA&gt; 6514
+## 2 13300 2013  64.315   SE   0   Chantilly, VA                  &lt;NA&gt; 1784
+## 3 13800 2013  72.111  SEL   0     Fairfax, VA Mineral Gray Metallic 3331
+## 4 16000 2014  27.490   SE   0    Manassas, VA          Oxford White 5448
+## 5 12000 2013  66.825   SE   0 Clarksville, MD Mineral Gray Metallic   NA
+## 6 14900 2014  65.157   SE   0    Manassas, VA Tuxedo Black Metallic 4436
+##    mpyr
+## 1  7.12
+## 2 12.86
+## 3 14.42
+## 4  6.87
+## 5 13.37
+## 6 16.29</code></pre>
+<p>Now let’s see the regression results.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>mod</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/lm.html'>lm</a></span><span class='op'>(</span><span class='va'>price</span> <span class='op'>~</span> <span class='fu'><a href='https://rdrr.io/r/base/factor.html'>as.factor</a></span><span class='op'>(</span><span class='va'>year</span><span class='op'>)</span> <span class='op'>+</span> <span class='va'>mileage</span> <span class='op'>+</span> <span class='va'>trim</span> <span class='op'>+</span> <span class='va'>awd</span>, data <span class='op'>=</span> <span class='va'>df</span><span class='op'>)</span>
+<span class='fu'><a href='https://rdrr.io/r/base/summary.html'>summary</a></span><span class='op'>(</span><span class='va'>mod</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
+<pre><code>## 
+## Call:
+## lm(formula = price ~ as.factor(year) + mileage + trim + awd, 
+##     data = df)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -4755.7  -854.6    -2.7   877.5  5024.2 
+## 
+## Coefficients:
+##                      Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)         22216.400    788.885  28.162  &lt; 2e-16 ***
+## as.factor(year)2013  1267.037    625.804   2.025   0.0442 *  
+## as.factor(year)2014  3160.017    645.152   4.898 1.92e-06 ***
+## as.factor(year)2015  5664.470    710.322   7.975 9.56e-14 ***
+## as.factor(year)2016  6166.658    821.469   7.507 1.68e-12 ***
+## as.factor(year)2017  9082.971    878.956  10.334  &lt; 2e-16 ***
+## mileage               -91.951      5.625 -16.347  &lt; 2e-16 ***
+## trimSE              -4983.725    409.765 -12.162  &lt; 2e-16 ***
+## trimSEL             -1822.889    291.400  -6.256 2.17e-09 ***
+## trimSport            3419.270    374.977   9.119  &lt; 2e-16 ***
+## trimTitanium           99.242    568.428   0.175   0.8616    
+## awd                  1277.734    222.680   5.738 3.30e-08 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 1450 on 211 degrees of freedom
+## Multiple R-squared:  0.9231, Adjusted R-squared:  0.9191 
+## F-statistic: 230.2 on 11 and 211 DF,  p-value: &lt; 2.2e-16</code></pre>
+<h2 id="interpretation-matters">Interpretation matters</h2>
+<p>First, we see the (Intercept). This is the average value of a car for every level of every feature not show. So it represents the average price of a year 2000 with 0 miles, Limited trim, without all wheel drive. This allows us to now see what the average effect of, say, year is, holding all else constant. Every unit is in terms of dollars, so we can see that for as.factor(year)2013 that 2013 cars are worth $1,267 more than 2012 cars. This makes sense.</p>
+<p>I scaled mileage to be in the thousands so that it’s a little easier to interpret. So we see that for every 1,000 miles you drive a Ford Edge, it decreases the value of the car by $91 dollars. This tells you a few things. One, if I’m being offered two cars that are 10K miles different, there should be about a ~$900 difference in the car.</p>
+<p>Second, if I’m planning on driving my car 30k miles over the next two years, how much should I expect the price to drop just due to mileage? Well, about -$91 * 30 = -$2,730. And maybe if you bought a 2014 model, two years later it could perhaps be like owning a 2012 model today. What’s the two-year difference between a 2014 and a 2012 model? About $3,160 dollars.</p>
+<h2 id="inference">Inference</h2>
+<p>Now it’s getting interesting! You’re now starting to remember how your mom told you to never buy a car new, because once you drive it off the lot, it’s worth significantly less. Well, we can see that if you own a brand-new 2017 model and a 2016 model, they’re about $9082 - $6166 = $2916 different. So yea, just by getting the 2017 model you’ll lose $3,000 in the first year. See how 2016 is only $502 dollars more than the 2015? Having the 2015 model is practically the same price as a 2016. So you might as well buy the 2016 model and save a year of wear.</p>
+<p>Well, my theory kind of starts breaking down because 2015 cars and 2014 cars are similarly spaced as 2014 and 2013 ones. So maybe I shouldn’t read too much into this. But the ability to see these trends shouldn’t stop you from asking important questions, like, why is there a difference between years?</p>
+<p>When investigating the Nissan Murano, I observed a $5430 difference between 2015 and 2014. That’s non-trivial considering the other years were equally spaced. Doing a little research I saw that Nissan changed the 2015 Murano style, and the new style was apparently worth a lot more. Turns out the same thing happened here for the Ford Edge - the 2015 model is slightly longer with redesigned interior.</p>
+<p>You can also use this framework to get a decent sense for what features are important to you. Like, is having all wheel drive really worth $1,277? If you live in an area where it snows, it probably is. But if you live in Florida, you may not need it.</p>
+<p>Not only is this framework helpful for comparing within-make-model differences, it helps you get a sense of between-make-model differences. Say, comparing the Ford Edge with the Nissan Murano and the Toyota RAV4. The coefficient for milage on the Edge is -$91. On the Murano it’s -$83, and on the RAV4 -$61. Remember this is the cost per 1,000 miles. That tells me that if I ‘spend’ 30k miles on a car over two years, I’ll lose -$2,730 on the Edge, but only -$1,830 on the RAV4, saving me $900. This also validates that Toyotas hold their value more.</p>
+<h2 id="identify-a-good-market-deal-and-how-truecar-might-do-it">Identify a good market deal (and how TrueCar might do it)</h2>
+<p>Beyond the research above, you can use such a model to identify deals in the market and guide your buying decision. Here’s how:</p>
+<ul>
+<li>Make a PriceFinder: Get the residuals (actual minus predicted value) for each car. The more negative the residual, the more this car is a good price! This may be how TrueCar and CarGurus get their ‘deals’. They fit a model (probably one better than what I’ve created here) and use its residuals to value each car.</li>
+<li>Identify ‘overpriced’ cars and try to possibly haggle those dealers down. Again, use the residuals here.</li>
+<li>Use this model to predict ‘out-of-sample’ cars. You can use this model built on TrueCar data and find a car on the classifieds or another site and evaluate whether it’s a good deal or not.</li>
+</ul>
+<p>Here’s an example of how we do that. First, let’s predict a hypothetical 2015 SEL Ford Edge FWD with 27.6k miles:</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>that_car</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/as.data.frame.html'>as.data.frame</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span><span class='op'>(</span>
+  year <span class='op'>=</span> <span class='fl'>2015</span>,
+  mileage <span class='op'>=</span> <span class='fl'>27.6</span>,
+  trim <span class='op'>=</span> <span class='st'>'SEL'</span>,
+  awd <span class='op'>=</span> <span class='fl'>0</span>
+<span class='op'>)</span><span class='op'>)</span>
+
+<span class='fu'><a href='https://rdrr.io/r/stats/predict.html'>predict</a></span><span class='op'>(</span><span class='va'>mod</span>, newdata <span class='op'>=</span> <span class='va'>that_car</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
+<pre><code>##        1 
+## 23520.13</code></pre>
+<p>We’d expect, on average, such a car to cost $23,520.13. Is what the dealer’s offering you above or below that? If they’re offering $25,000 then you know the car is $1,479.87 higher than what you might expect.</p>
+<h2 id="how-to-improve-our-model">How to improve our model</h2>
+<p>Now, this is a pretty naive model, but it’s a model. As George Box said, “All models are wrong, but some are useful.” But here are some quick ways to improve this model:</p>
+<ul>
+<li>Check for interactions. An interaction between miles and year would tell you whether the effect of miles would change across different years. For example, I think adding 10k miles to a 2017 would devalue the car more steeply than adding 10k miles to a 2012 model. During my quick research I checked for interactions, but I didn’t find many to be significant and I chose to ignore them for simplicity.</li>
+<li>Use a linear trend for year rather than a ‘factor’ trend. I’ve chosen here to treat year as a factor, which implies that I think that each year is completely different. Had I used year as a numeric feature, I could have possibly interpreted year as, “Each additional year increases/decreases the price by X on average, holding all else constant.” I liked the simplicity of thinking that each year was different, and since cars usually update models every four years, I wanted to be able to see where this happened. You couldn’t easily see this if year were a linear trend. Objectively, what would be a good way to choose? Fit both models and see which had better R-squared or AIC.</li>
+<li>Do model diagnostics. Check the residual plot to make sure the errors are normally distributed. Check for outliers. Each of these affects the accuracy of your residuals. I did some brief checks and was genearlly satisfied.</li>
+</ul>
+<h2 id="takeaways">Takeaways</h2>
+<p>So, a data scientist walks into a dealership with a computer with a registry of thousands of used cars on it. He negotiates with the front-office salesman. And the salesman says…</p>
+<h3 id="non-statistical-considerations">Non-statistical considerations</h3>
+<p>When you’re buying a car from a dealership, remember that it’s their job to sell you that car. Here are other random things I learned to think about during the car-buying process.</p>
+<ul>
+<li>How many miles has it been driven, and how old is it? (We found a car with 45,000 miles in one year. That’s almost two trips around the entire world in a year! This is also 3750 miles per month (a cross-country US trip), or about 125 miles per day. What kind of driving do you have to do in a year to get that?</li>
+<li>How many prior owners were there?</li>
+<li>Was the car previously a rental? A lease? A fleet?</li>
+<li>Rental: Abused by X number of people? But also perhaps better maintained by rental companies?</li>
+<li>Lease: What kind of person would lease?</li>
+<li>Fleet: Probably a corporate car. Like a rental, but different kind of drivers.</li>
+<li>Where did the car come from?</li>
+<li>Is there snow where they live? And do they use salt on the roads there? (Salt = rust underneath)</li>
+<li>What else does the geography tell you about the possible wear on the car (causing long-term problems)</li>
+<li>What does the CarFax or Autocheck say?</li>
+<li>Was the car sold at auction? When? What could the time between sales tell you about the car?</li>
+<li>If someone gets into an accident and doesn’t report it, the CarFax won’t tell you. I drove 45 minutes to look at a ‘great’ deal only to learn the door was nearly falling off.</li>
+<li>Good luck haggling the dealer down. Car dealerships don’t usually make that much on the car, but make their money on warranties and fees. Your best chance is to haggle on the deals being offered (terms and agreements).</li>
+<li>Don’t get the powertrain warranty. This is like the “french fries” of the auto industry. Pure profit.</li>
+<li>Every dealership has quota. Going in at the end of the month might help you, but the dealership will be packed.</li>
+<li>Used cars are bought at auction. Carmax buys all their cars at auction and only keeps 1/3 of them. Local dealers also get their cars this way, and they don’t always know what the car looks like till it gets to their lot. Check the Carfax to see if any prior dealers ‘flipped’ the car quickly.</li>
+</ul>
+<p>Used cars have a shelf life. If a car isn’t sold in 45-60 days, some dealerships might have to auction off the car. That means you’ll see a tiering in the price. Less-favorable cars will see the price drop several times in its life cycle. Check CarGurus to see how many times the price has dropped, and try to guess for yourself if it might drop again (or just get sold). They know their prices. They’ve got their back-office guys looking at every price of every same car within 100 mile radius. While I’m also able to get as many of those cars as available on TrueCar, I’m not able to segment by all the various features. It’s easy to webscrape for Make, Model, Year, AWD/FWD, and maybe V6 engine, but it’s very hard to get the details like leather, sunroof, twin-turbo, etc. That’s where the pricing gets really interesting.</p>
+<h3 id="final-thoughts">Final thoughts</h3>
+<p>Ultimately, a car is bought by irrational humans, and sold by more experienced ones too. So all of this data will probably go out the door when you try to make a deal.</p>
+<p>So a data scientist walked into several dealerships, and left frustrated because nobody budged on their prices. Doesn’t matter how much data I have, or what I think I know, everyone’s got their price.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

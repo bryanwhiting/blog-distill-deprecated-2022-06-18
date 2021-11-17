@@ -56,7 +56,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { color: #20794d; } /* Attribute */
+code span.at { } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
 code span.cf { color: #007ba5; } /* ControlFlow */
@@ -77,7 +77,7 @@ code span.kw { color: #007ba5; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
 code span.ot { color: #007ba5; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
-code span.sc { color: #20794d; } /* SpecialChar */
+code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
 code span.st { color: #20794d; } /* String */
 code span.va { color: #111111; } /* Variable */
@@ -85,36 +85,37 @@ code span.vs { color: #20794d; } /* VerbatimString */
 code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
+
   <!--radix_placeholder_meta_tags-->
-<title>Bryan Whiting: Starting with Jekyll</title>
+<title>Bryan Whiting: Buying a used car the data science way: Part 1</title>
 
 
 
 <!--  https://schema.org/Article -->
-<meta property="article:published" itemprop="datePublished" content="2016-11-07"/>
-<meta property="article:created" itemprop="dateCreated" content="2016-11-07"/>
+<meta property="article:published" itemprop="datePublished" content="2017-02-18"/>
+<meta property="article:created" itemprop="dateCreated" content="2017-02-18"/>
 <meta name="article:author" content="Bryan Whiting"/>
 
 <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-<meta property="og:title" content="Bryan Whiting: Starting with Jekyll"/>
+<meta property="og:title" content="Bryan Whiting: Buying a used car the data science way: Part 1"/>
 <meta property="og:type" content="article"/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:site_name" content="Bryan Whiting"/>
 
 <!--  https://dev.twitter.com/cards/types/summary -->
 <meta property="twitter:card" content="summary"/>
-<meta property="twitter:title" content="Bryan Whiting: Starting with Jekyll"/>
+<meta property="twitter:title" content="Bryan Whiting: Buying a used car the data science way: Part 1"/>
 
 <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
 <script type="text/json" id="radix-rmarkdown-metadata">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","author","date","output","categories"]}},"value":[{"type":"character","attributes":{},"value":["Starting with Jekyll"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Bryan Whiting"]}]}]},{"type":"character","attributes":{},"value":["11-07-2016"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]},{"type":"character","attributes":{},"value":["productivity","blogging","jekyll"]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","author","date","output","categories"]}},"value":[{"type":"character","attributes":{},"value":["Buying a used car the data science way: Part 1"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Bryan Whiting"]}]}]},{"type":"character","attributes":{},"value":["2017-02-18"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]},{"type":"character","attributes":{},"value":["webscraping","cars","pricing","r"]}]}
 </script>
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["starting-with-jekyll_files/anchor-4.2.2/anchor.min.js","starting-with-jekyll_files/bowser-1.9.3/bowser.min.js","starting-with-jekyll_files/distill-2.2.21/template.v2.js","starting-with-jekyll_files/header-attrs-2.10/header-attrs.js","starting-with-jekyll_files/jquery-1.11.3/jquery.min.js","starting-with-jekyll_files/popper-2.6.0/popper.min.js","starting-with-jekyll_files/tippy-6.2.7/tippy-bundle.umd.min.js","starting-with-jekyll_files/tippy-6.2.7/tippy-light-border.css","starting-with-jekyll_files/tippy-6.2.7/tippy.css","starting-with-jekyll_files/tippy-6.2.7/tippy.umd.min.js","starting-with-jekyll_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["used-cars-scrape_files/anchor-4.2.2/anchor.min.js","used-cars-scrape_files/bowser-1.9.3/bowser.min.js","used-cars-scrape_files/distill-2.2.21/template.v2.js","used-cars-scrape_files/header-attrs-2.11/header-attrs.js","used-cars-scrape_files/jquery-3.6.0/jquery-3.6.0.js","used-cars-scrape_files/jquery-3.6.0/jquery-3.6.0.min.js","used-cars-scrape_files/jquery-3.6.0/jquery-3.6.0.min.map","used-cars-scrape_files/popper-2.6.0/popper.min.js","used-cars-scrape_files/tippy-6.2.7/tippy-bundle.umd.min.js","used-cars-scrape_files/tippy-6.2.7/tippy-light-border.css","used-cars-scrape_files/tippy-6.2.7/tippy.css","used-cars-scrape_files/tippy-6.2.7/tippy.umd.min.js","used-cars-scrape_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2041,8 +2042,8 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 <!--/radix_placeholder_distill-->
-  <script src="../../site_libs/header-attrs-2.10/header-attrs.js"></script>
-  <script src="../../site_libs/jquery-1.11.3/jquery.min.js"></script>
+  <script src="../../site_libs/header-attrs-2.11/header-attrs.js"></script>
+  <script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <script src="../../site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="../../site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="../../site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2069,7 +2070,7 @@ gtag('config', 'UA-85616639-1');
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Starting with Jekyll","authors":[{"author":"Bryan Whiting","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2016-11-07T00:00:00.000+00:00","citationText":"Whiting, 2016"}
+{"title":"Buying a used car the data science way: Part 1","authors":[{"author":"Bryan Whiting","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2017-02-18T00:00:00.000+00:00","citationText":"Whiting, 2017"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2095,12 +2096,13 @@ gtag('config', 'UA-85616639-1');
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Starting with Jekyll</h1>
+<h1>Buying a used car the data science way: Part 1</h1>
 <!--radix_placeholder_categories-->
 <div class="dt-tags">
-  <a href="../../index.html#category:productivity" class="dt-tag">productivity</a>
-  <a href="../../index.html#category:blogging" class="dt-tag">blogging</a>
-  <a href="../../index.html#category:jekyll" class="dt-tag">jekyll</a>
+  <a href="../../index.html#category:webscraping" class="dt-tag">webscraping</a>
+  <a href="../../index.html#category:cars" class="dt-tag">cars</a>
+  <a href="../../index.html#category:pricing" class="dt-tag">pricing</a>
+  <a href="../../index.html#category:r" class="dt-tag">r</a>
 </div>
 <!--/radix_placeholder_categories-->
 
@@ -2110,62 +2112,130 @@ gtag('config', 'UA-85616639-1');
   
   Bryan Whiting
   
-<br/>11-07-2016
+<br/>2017-02-18
 </div>
 
 <div class="d-article">
-<p>Hello world.</p>
-<p>I wanted to start a blog. I wanted to set it up for free, use a custom URL (and not <em>something.bloggingplatform.com</em>), and be able to both blog and create tutorials. I didn’t mind it possibly being technical<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. Enter Jekyll.</p>
-<p><em>If you want to get your blog in 10 minutes, skip to below.</em></p>
-<h1 id="why-blog-with-jekyll">Why Blog with Jekyll?</h1>
-<p>Here’s why you can and should blog with Jekyll (if you’re a data scientist):</p>
-<ol start="2" type="1">
-<li>Jekyll has beautiful, free, open-source templates.</li>
-<li>GitHub will host your website for free<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>.</li>
-<li>Jekyll is <a href="https://www.smashingmagazine.com/2015/11/modern-static-website-generators-next-big-thing/">static</a>.</li>
-<li>Jekyll can be simple to set up<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>.</li>
-<li>I tried Wordpress and blogger.com and got frustrated.</li>
-<li>The blogging content you create is very portable (easy to take your posts from one blog site to another).</li>
-<li>Creating blogs in Markdown syntax is a dream (even for non-technical folks).</li>
-<li>You can manage your blog from your terminal</li>
-<li>You can manage your blog from your phone (if you have a GitHub-editing app)</li>
-</ol>
-<p>But if you don’t like debugging occasional errors, you probably shouldn’t blog with Jekyll.</p>
-<p>What is Jekyll, you ask? Jekyll is an open-source blogging platform. Anyone can write a template and post it, and anyone else can use that template. Perusing <a href="http://jekyllthemes.org/">Jekyllthemes.org</a>, you can pick out any template you’d like.</p>
-<h1 id="how-did-i-get-started-with-jekyll">How did I get started with Jekyll?</h1>
-<p>As a blogging noob, I’ve discovered there are hundreds of ways to generate a blog (e.g., WordPress, Squarespace, blogger.com, Weebly, etc.). But when my colleague <a href="http://luiarthur.github.io/">Arthur Lui</a> showed me his blog, I wanted something similar. I first tried Wordpress, then tried blogspot, then gave up and followed Arthur’s example and landed with Jekyll.</p>
-<h1 id="set-up-a-blog-in-10-minutes">Set up a blog in 10 minutes!</h1>
-<p>I followed this Jekyll <a href="https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/">tutorial</a> to set up my first blog. I’ll simplify those steps here to get you up and running quickly:</p>
-<ol type="1">
-<li>Get a GitHub account. (2 min)</li>
-<li>Go to <a href="http://jekyllthemes.org/">Jekyllthemes.org</a>. All of these blog themes are free. Find one you like, and Fork the repo (i.e., “repository”). (2-60 min, depending on how long you peruse)</li>
-<li>In GitHub, rename the newly-forked repo from “REPO name” to “yourgithubusername.github.io”. (1 min)</li>
-<li>Now go to “githubuserbame.github.io”. Voila, you have a blog.</li>
-</ol>
-<p>And if you want to start writing posts, go to your "_posts" folder. Then create new files and follow the default templates that the repository provides. (The blogs will need to be written in Markdown syntax.)</p>
-<p>That was my 10 minute promise. If you feel a bit cheated or lost, go to the well-done <a href="https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/">tutorial</a> and do all the steps. But the steps I listed are the essential steps to setting up a blog from scratch. So if you want to make a few blogs really quickly, after you figure out the first one the others follow nicely. For example, once I finished the tutorial, I followed those steps above to try two other themes before deciding on the <a href="https://github.com/bencentra/centrarium">Centrarium</a> theme.</p>
-<p>To get Centrarium to work, I did have to change some configurations in the "_config.yml", so there can be some minor debugging depending on the theme you choose. But with a little patience and some Googling, you’ll get it.</p>
-<h1 id="add-to-jekyll-a-custom-url-from-godaddy">Add to Jekyll a custom URL from GoDaddy</h1>
-<p>You’ll notice I have a custom URL and not “bryanwhiting.github.io”. I used GoDaddy to get a domain. (I have no affiliation with GoDaddy.) Here’s how I linked GoDaddy with my GitHub Jekyll blog:</p>
-<ol type="1">
-<li>Go to GoDaddy. Get a domain.</li>
-<li>In your Github repo, change (or create) a CNAME file in the main directory. (See my <a href="https://github.com/bryanwhiting/bryanwhiting.github.io/blob/master/CNAME">CNAME</a> file for an example). And for the CNAME file contents, just type in the new “www” that you registered through GoDaddy.</li>
-<li>Then, on GoDaddy, go to the section “DNS Management”. Here’s where you tell GoDaddy how to connect your newly purchased “www” with GitHub. Create the following connections:</li>
-<li>[Type, Name, Value, TTL] = [A, @, 192.30.252.153, 600 seconds]</li>
-<li>[Type, Name, Value, TTL] = [A, @, 192.30.252.154, 600 seconds]</li>
-<li>[Type, Name, Value, TTL] = [CNAME, ftp, yourgithubusername.github.io, 600 seconds]</li>
-<li>[Type, Name, Value, TTL] = [CNAME, www, yourgithubusername.github.io, 600 seconds]</li>
-</ol>
-<p>If you have the CNAME file in your GitHub folder, GitHub and GoDaddy will talk and after a few minutes your custom “www” will work. You don’t technically need the two [A] steps, but those connections allow users to type “<a href="http://bryanwhiting.com">bryanwhiting.com</a>” instead of “www.bryanwhiting.com”. It can take up to 24 hours before these [A] connections enable, so don’t be worried if the short URL doesn’t work first try. But the full URL should work soon enough.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
-<section class="footnotes" role="doc-endnotes">
-<hr />
-<ol>
-<li id="fn1" role="doc-endnote"><p>Specifically, I was interested in being able to use the command line for my posts. Additionally, I didn’t mind seeing or using a little bit of code.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2" role="doc-endnote"><p>Someone has to <a href="https://www.google.com/search?q=what+does+it+mean+to+host+a+website&amp;oq=what+does+it+mean+to+host+&amp;aqs=chrome.0.0j69i57j0l4.2810j0j9&amp;sourceid=chrome&amp;ie=UTF-8">host</a> it (i.e., store and display all the files). I started off trying to set up a WordPress blog, but you have to pay another company to <a href="http://www.webhostingbest10.com/web-hosting-reviews">host</a>. I didn’t want to bother.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3" role="doc-endnote"><p>If you try to set it up by following the instructions on <a href="https://jekyllrb.com/">jekyllrb.com</a>, that’s the complicated way. That’s how I originally started, got lost for five hours, and stopped. Six months later, I found a better way.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section>
+<p><em>[Update 2021-11-16] This analysis was originally written on my old blog <a href="https://htmlpreview.github.io/?https://github.com/bryanwhiting/blog_deprecated/blob/master/content/post/2017-10-18-getting-used-car-data.html">here</a>. You can find the source code for it <a href="https://github.com/bryanwhiting/blog_deprecated/blob/master/content/post/2017-10-18-getting-used-car-data.Rmd">here</a>. This code no longer works as TrueCar changed their CSS to make it more difficult to scrape. It’s still possible, but you’d need to build a custom scraper from scratch.</em></p>
+<p>This is part 1 out of a two-part series on scraping used car data. Check out <a href="../2017-10-19-used-cars-analysis/index.html">part 2</a> to learn how to analyze the data.</p>
+<p>In another post, I describe how I use this data that I’ve scraped, but I wanted to provide a more in-depth tutorial for those interested in how I got the data. Note, this data belongs to Truecar, so all uses herein are for personal and academic reasons only.</p>
+<h2 id="get-the-data">Get the data</h2>
+<p>In order to do any good analaysis, you first need data. I prefer to have more data than less, where possible. In this case, I don’t have any data, so I use webscraping to get the data. There are much better tutorials on how to scrape data, so I’ll be light. I use R’s rvest package here, which does a decent job.1 Let’s look at Truecar’s Used Car postings2. First I use google to find the search query on Truecar that I like.</p>
+<h2 id="load-packages">Load packages</h2>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://rvest.tidyverse.org/'>rvest</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://dplyr.tidyverse.org'>dplyr</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://magrittr.tidyverse.org'>magrittr</a></span><span class='op'>)</span>
+<span class='co'># Find the URL of the data you want to scrape</span>
+<span class='va'>url</span> <span class='op'>&lt;-</span> <span class='st'>'https://www.truecar.com/used-cars-for-sale/listings/ford/edge/'</span>
+<span class='fu'><a href='http://xml2.r-lib.org/reference/read_xml.html'>read_html</a></span><span class='op'>(</span><span class='va'>url</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
+<pre><code>## {xml_document}
+## &lt;html lang=&quot;en-US&quot;&gt;
+## [1] &lt;head&gt;\n&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset= ...
+## [2] &lt;body&gt;\n    &lt;!-- Element target for any partner code meant to execut ...</code></pre>
+<p>You’ll see there’s a head and a body. Our data’s in the body, so let’s use html_nodes() and html_text() to parse out the data we want. I used Selectorgadget to know what HTML classes to search for.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'><a href='http://xml2.r-lib.org/reference/read_xml.html'>read_html</a></span><span class='op'>(</span><span class='va'>url</span><span class='op'>)</span> <span class='op'>%&gt;%</span> <span class='fu'><a href='https://rvest.tidyverse.org/reference/rename.html'>html_nodes</a></span><span class='op'>(</span><span class='st'>'.col-xs-6.col-sm-8.no-left-padding'</span><span class='op'>)</span> <span class='op'>%&gt;%</span> <span class='fu'><a href='https://rvest.tidyverse.org/reference/html_text.html'>html_text</a></span><span class='op'>(</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
+<pre><code>## character(0)</code></pre>
+<p>So that’s how you get the data on a single page. If you look closer at the URL, you see a lot of helpful things. First, there’s the make, then the model, then the location-zip, then the year-range, and ultimately the trim. This is a very pretty and clean URL. If you click on a few additional pages, you’ll see the URL opens up with <code>?page=2</code>.</p>
+<p><a href="https://www.truecar.com/used-cars-for-sale/listings/ford/edge/location-90210/?page=2" class="uri">https://www.truecar.com/used-cars-for-sale/listings/ford/edge/location-90210/?page=2</a></p>
+<p>This is our ‘in’ to scraping multiple pages. I won’t bore you with the details of how to get that data into a neat matrix for us to analyze, but suffice it to say that I’m able to do it. Just build a function to construct a URL, and build a loop to go through the different pages, then use lots of <code>str_extract()</code> from the <code>stringr</code> package and <code>gsub</code> to clean up the data.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='http://stringr.tidyverse.org'>stringr</a></span><span class='op'>)</span>
+
+<span class='va'>make</span> <span class='op'>=</span> <span class='st'>'ford'</span>
+<span class='va'>model</span> <span class='op'>=</span> <span class='st'>'edge'</span>
+<span class='va'>zip</span> <span class='op'>=</span> <span class='st'>'90210'</span>
+<span class='va'>year</span> <span class='op'>=</span> <span class='fl'>2012</span>
+<span class='va'>npages</span> <span class='op'>=</span> <span class='fl'>5</span>
+
+<span class='va'>url</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste</a></span><span class='op'>(</span><span class='st'>'https://www.truecar.com/used-cars-for-sale/listings/'</span>, 
+             <span class='va'>make</span>, <span class='st'>'/'</span>, 
+             <span class='va'>model</span> ,
+             <span class='st'>'/location-'</span>, <span class='va'>zip</span>,
+             <span class='st'>'/year-'</span>,<span class='va'>year</span>,<span class='st'>'-max/?page='</span>, sep <span class='op'>=</span> <span class='st'>""</span><span class='op'>)</span>
+
+<span class='va'>urls</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste</a></span><span class='op'>(</span><span class='va'>url</span>, <span class='fl'>1</span><span class='op'>:</span><span class='va'>npages</span>, sep <span class='op'>=</span> <span class='st'>""</span><span class='op'>)</span>
+
+<span class='va'>scrape</span> <span class='op'>&lt;-</span> <span class='kw'>function</span><span class='op'>(</span><span class='va'>pageno</span><span class='op'>)</span><span class='op'>{</span>
+  <span class='kw'><a href='https://rdrr.io/r/base/try.html'>try</a></span><span class='op'>(</span>
+    <span class='fu'><a href='http://xml2.r-lib.org/reference/read_xml.html'>read_html</a></span><span class='op'>(</span><span class='va'>urls</span><span class='op'>[</span><span class='va'>pageno</span><span class='op'>]</span><span class='op'>)</span> <span class='op'>%&gt;%</span> <span class='fu'><a href='https://rvest.tidyverse.org/reference/rename.html'>html_nodes</a></span><span class='op'>(</span><span class='st'>'.col-xs-6.col-sm-8.no-left-padding'</span><span class='op'>)</span> <span class='op'>%&gt;%</span> <span class='fu'><a href='https://rvest.tidyverse.org/reference/html_text.html'>html_text</a></span><span class='op'>(</span><span class='op'>)</span>
+  <span class='op'>)</span>
+<span class='op'>}</span>
+
+<span class='va'>long_list</span> <span class='op'>=</span> <span class='fu'>scrape</span><span class='op'>(</span><span class='fl'>1</span><span class='op'>)</span>
+<span class='kw'>for</span><span class='op'>(</span><span class='va'>i</span> <span class='kw'>in</span> <span class='fl'>2</span><span class='op'>:</span><span class='va'>npages</span><span class='op'>)</span><span class='op'>{</span>
+  <span class='fu'><a href='https://rdrr.io/r/base/print.html'>print</a></span><span class='op'>(</span><span class='va'>i</span><span class='op'>)</span>
+  <span class='va'>new_list</span> <span class='op'>=</span> <span class='kw'><a href='https://rdrr.io/r/base/try.html'>try</a></span><span class='op'>(</span><span class='fu'>scrape</span><span class='op'>(</span><span class='va'>i</span><span class='op'>)</span><span class='op'>)</span>
+  
+  <span class='va'>error</span> <span class='op'>=</span> <span class='op'>(</span><span class='st'>"try-error"</span> <span class='op'>%in%</span> <span class='fu'><a href='https://rdrr.io/r/base/class.html'>class</a></span><span class='op'>(</span><span class='va'>new_list</span><span class='op'>)</span><span class='op'>)</span>
+  
+  <span class='kw'>if</span><span class='op'>(</span> <span class='va'>error</span> <span class='op'>==</span> <span class='cn'>FALSE</span> <span class='op'>)</span><span class='op'>{</span>
+    <span class='va'>long_list</span> <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='va'>long_list</span>, <span class='va'>new_list</span><span class='op'>)</span> 
+  <span class='op'>}</span> <span class='kw'>else</span> <span class='op'>{</span>
+    <span class='kw'>break</span>
+  <span class='op'>}</span>
+<span class='op'>}</span>
+<span class='co'>## [1] 2</span>
+<span class='va'>stats</span> <span class='op'>&lt;-</span> <span class='va'>long_list</span>
+<span class='va'>df</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/as.data.frame.html'>as.data.frame</a></span><span class='op'>(</span><span class='va'>stats</span><span class='op'>)</span>
+<span class='va'>df</span><span class='op'>$</span><span class='va'>stats</span> <span class='op'>%&lt;&gt;%</span> <span class='fu'><a href='https://rdrr.io/r/base/character.html'>as.character</a></span><span class='op'>(</span><span class='op'>)</span>
+<span class='va'>df</span><span class='op'>$</span><span class='va'>price</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://stringr.tidyverse.org/reference/str_extract.html'>str_extract</a></span><span class='op'>(</span><span class='va'>df</span><span class='op'>$</span><span class='va'>stats</span>, <span class='st'>'\\$[0-9]*,[0-9]*'</span><span class='op'>)</span> <span class='op'>%&gt;%</span> 
+  <span class='fu'><a href='https://rdrr.io/r/base/grep.html'>gsub</a></span><span class='op'>(</span><span class='st'>'Price: |\\$|,'</span>, <span class='st'>''</span>, <span class='va'>.</span><span class='op'>)</span> <span class='op'>%&gt;%</span>
+  <span class='fu'><a href='https://rdrr.io/r/base/numeric.html'>as.numeric</a></span><span class='op'>(</span><span class='op'>)</span>
+<span class='va'>df</span><span class='op'>$</span><span class='va'>year</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://stringr.tidyverse.org/reference/str_extract.html'>str_extract</a></span><span class='op'>(</span><span class='va'>df</span><span class='op'>$</span><span class='va'>stats</span>, <span class='st'>'^[0-9]* '</span><span class='op'>)</span> <span class='op'>%&gt;%</span> 
+  <span class='fu'><a href='https://rdrr.io/r/base/numeric.html'>as.numeric</a></span><span class='op'>(</span><span class='op'>)</span>
+<span class='va'>df</span><span class='op'>$</span><span class='va'>mileage</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://stringr.tidyverse.org/reference/str_extract.html'>str_extract</a></span><span class='op'>(</span><span class='va'>df</span><span class='op'>$</span><span class='va'>stats</span>, <span class='st'>'Mileage: [0-9]*,[0-9]*'</span><span class='op'>)</span> <span class='op'>%&gt;%</span> 
+  <span class='fu'><a href='https://rdrr.io/r/base/grep.html'>gsub</a></span><span class='op'>(</span><span class='st'>'Mileage: |,'</span>, <span class='st'>''</span>, <span class='va'>.</span><span class='op'>)</span> <span class='op'>%&gt;%</span>
+  <span class='fu'><a href='https://rdrr.io/r/base/numeric.html'>as.numeric</a></span><span class='op'>(</span><span class='op'>)</span>
+
+<span class='co'># a = df$stats[1]</span>
+<span class='va'>df</span><span class='op'>$</span><span class='va'>trim</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://stringr.tidyverse.org/reference/str_extract.html'>str_extract</a></span><span class='op'>(</span><span class='va'>df</span><span class='op'>$</span><span class='va'>stats</span>, <span class='st'>'.*Mileage:'</span><span class='op'>)</span> <span class='op'>%&gt;%</span> 
+  <span class='fu'><a href='https://rdrr.io/r/base/grep.html'>gsub</a></span><span class='op'>(</span><span class='st'>'FWD|AWD|4x[24]|[24]WD|V6|4-cyl|^[0-9][0-9][0-9][0-9]|4dr|Automatic|Manual|Mileage:'</span>, <span class='st'>''</span>, <span class='va'>.</span>, ignore.case <span class='op'>=</span> <span class='cn'>T</span><span class='op'>)</span> <span class='op'>%&gt;%</span> 
+  <span class='fu'><a href='https://rdrr.io/r/base/grep.html'>gsub</a></span><span class='op'>(</span><span class='va'>make</span>, <span class='st'>''</span>, <span class='va'>.</span>, ignore.case <span class='op'>=</span> <span class='cn'>T</span><span class='op'>)</span> <span class='op'>%&gt;%</span> 
+  <span class='fu'><a href='https://rdrr.io/r/base/grep.html'>gsub</a></span><span class='op'>(</span><span class='va'>model</span>, <span class='st'>''</span>, <span class='va'>.</span>, ignore.case <span class='op'>=</span> <span class='cn'>T</span><span class='op'>)</span> <span class='op'>%&gt;%</span> 
+  <span class='fu'><a href='https://rdrr.io/r/base/trimws.html'>trimws</a></span><span class='op'>(</span><span class='op'>)</span> 
+
+
+<span class='va'>df</span><span class='op'>$</span><span class='va'>awd</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/grep.html'>grepl</a></span><span class='op'>(</span><span class='st'>'AWD|4WD|4x4'</span>, <span class='va'>df</span><span class='op'>$</span><span class='va'>stats</span>, ignore.case <span class='op'>=</span> <span class='cn'>T</span><span class='op'>)</span> <span class='op'>%&gt;%</span> <span class='fu'><a href='https://rdrr.io/r/base/numeric.html'>as.numeric</a></span><span class='op'>(</span><span class='op'>)</span>
+<span class='va'>df</span><span class='op'>$</span><span class='va'>manual</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/grep.html'>grepl</a></span><span class='op'>(</span><span class='st'>'manual'</span>, <span class='va'>df</span><span class='op'>$</span><span class='va'>stats</span><span class='op'>)</span> <span class='op'>%&gt;%</span> <span class='fu'><a href='https://rdrr.io/r/base/numeric.html'>as.numeric</a></span><span class='op'>(</span><span class='op'>)</span>
+<span class='va'>df</span><span class='op'>$</span><span class='va'>v6</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/grep.html'>grepl</a></span><span class='op'>(</span><span class='st'>'V6'</span>, <span class='va'>df</span><span class='op'>$</span><span class='va'>stats</span><span class='op'>)</span> <span class='op'>%&gt;%</span> <span class='fu'><a href='https://rdrr.io/r/base/numeric.html'>as.numeric</a></span><span class='op'>(</span><span class='op'>)</span>
+<span class='va'>df</span><span class='op'>$</span><span class='va'>location</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://stringr.tidyverse.org/reference/str_extract.html'>str_extract</a></span><span class='op'>(</span><span class='va'>df</span><span class='op'>$</span><span class='va'>stats</span>, <span class='st'>'Location: .*Exterior:'</span><span class='op'>)</span> <span class='op'>%&gt;%</span> 
+  <span class='fu'><a href='https://rdrr.io/r/base/grep.html'>gsub</a></span><span class='op'>(</span><span class='st'>'Location: |Exterior:'</span>, <span class='st'>''</span>, <span class='va'>.</span><span class='op'>)</span> <span class='op'>%&gt;%</span> 
+  <span class='fu'><a href='https://rdrr.io/r/base/trimws.html'>trimws</a></span><span class='op'>(</span><span class='op'>)</span> 
+<span class='va'>df</span><span class='op'>$</span><span class='va'>ext</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://stringr.tidyverse.org/reference/str_extract.html'>str_extract</a></span><span class='op'>(</span><span class='va'>df</span><span class='op'>$</span><span class='va'>stats</span>, <span class='st'>'Exterior: .*Interior:'</span><span class='op'>)</span> <span class='op'>%&gt;%</span> 
+  <span class='fu'><a href='https://rdrr.io/r/base/grep.html'>gsub</a></span><span class='op'>(</span><span class='st'>'Interior:|Exterior:'</span>, <span class='st'>''</span>, <span class='va'>.</span><span class='op'>)</span> <span class='op'>%&gt;%</span> 
+  <span class='fu'><a href='https://rdrr.io/r/base/trimws.html'>trimws</a></span><span class='op'>(</span><span class='op'>)</span> 
+<span class='va'>df</span><span class='op'>$</span><span class='va'>int</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://stringr.tidyverse.org/reference/str_extract.html'>str_extract</a></span><span class='op'>(</span><span class='va'>df</span><span class='op'>$</span><span class='va'>stats</span>, <span class='st'>'Interior: .*VIN:'</span><span class='op'>)</span> <span class='op'>%&gt;%</span> 
+  <span class='fu'><a href='https://rdrr.io/r/base/grep.html'>gsub</a></span><span class='op'>(</span><span class='st'>'Interior: |VIN:'</span>, <span class='st'>''</span>, <span class='va'>.</span><span class='op'>)</span> <span class='op'>%&gt;%</span> 
+  <span class='fu'><a href='https://rdrr.io/r/base/trimws.html'>trimws</a></span><span class='op'>(</span><span class='op'>)</span> 
+<span class='va'>df</span><span class='op'>$</span><span class='va'>vin</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://stringr.tidyverse.org/reference/str_extract.html'>str_extract</a></span><span class='op'>(</span><span class='va'>df</span><span class='op'>$</span><span class='va'>stats</span>, <span class='st'>'VIN: .*\\$'</span><span class='op'>)</span> <span class='op'>%&gt;%</span> 
+  <span class='fu'><a href='https://rdrr.io/r/base/grep.html'>gsub</a></span><span class='op'>(</span><span class='st'>'VIN: |\\$'</span>, <span class='st'>''</span>, <span class='va'>.</span><span class='op'>)</span> <span class='op'>%&gt;%</span> 
+  <span class='fu'><a href='https://rdrr.io/r/base/substr.html'>substr</a></span><span class='op'>(</span><span class='va'>.</span>, <span class='fl'>1</span>, <span class='fl'>17</span><span class='op'>)</span>
+<span class='va'>df</span><span class='op'>$</span><span class='va'>deal</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://stringr.tidyverse.org/reference/str_extract.html'>str_extract</a></span><span class='op'>(</span><span class='va'>df</span><span class='op'>$</span><span class='va'>stats</span>, <span class='st'>'\\$[0-9]*,[0-9]* below'</span><span class='op'>)</span> <span class='op'>%&gt;%</span> 
+  <span class='fu'><a href='https://rdrr.io/r/base/grep.html'>gsub</a></span><span class='op'>(</span><span class='st'>'below|\\$|,'</span>, <span class='st'>''</span>, <span class='va'>.</span><span class='op'>)</span> <span class='op'>%&gt;%</span> <span class='fu'><a href='https://rdrr.io/r/base/trimws.html'>trimws</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>%&gt;%</span>
+  <span class='fu'><a href='https://rdrr.io/r/base/numeric.html'>as.numeric</a></span><span class='op'>(</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
+<p>And here’s what the results look like. You’ve got the original scraped data in the stats column and then everything else that you can parse out.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># df was the dataframe object we needed</span>
+<span class='va'>df</span> <span class='op'>%&gt;%</span> <span class='fu'><a href='https://dplyr.tidyverse.org/reference/select.html'>select</a></span><span class='op'>(</span><span class='op'>-</span><span class='va'>stats</span><span class='op'>)</span> <span class='op'>%&gt;%</span> <span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span><span class='op'>(</span><span class='fl'>10</span><span class='op'>)</span> <span class='op'>%&gt;%</span> <span class='fu'>formattable</span><span class='fu'>::</span><span class='fu'><a href='https://renkun-ken.github.io/formattable/reference/formattable.html'>formattable</a></span><span class='op'>(</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
