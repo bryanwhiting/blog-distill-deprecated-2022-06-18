@@ -1,5 +1,6 @@
 ---
 title: "Starting with Jekyll"
+description: Blogging on Jekyll.
 author: "Bryan Whiting"
 date: 11-07-2016
 output:
@@ -9,7 +10,7 @@ categories:
   - productivity
   - blogging
   - jekyll
-draft: true
+draft: false
 ---
 
 Hello world. 

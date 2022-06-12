@@ -1,0 +1,87 @@
+---
+title: "Making a Peloton Dashboard"
+description: |
+  A short description of the post.
+author: []
+draft: true
+date: 2021-11-23
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+Blogs: 
+
+1. how to create the calendar plot 
+2. How to analyze strava + peloton data 
+3. peloton KJ conversion chart (name it the same as the
+other blog for SEO) 
+4. Set up a self-updating dash
+
+Dashboard: 
+
+- Calendar + two best/last tables + goal-setting table
+(kj/duration)
+- Combine all lower-level plots into a grid
+
+TODO: 
+
+- [x] Add weekly stats below the calendar 
+- [x] Update run data so it's by date (not by activity) 
+- [x] fix peloton date time 
+- [x] put months on top 
+- [x] color months
+- [x] Refactor the code 
+- [x]
+- [x]
+- [x]
+* Set up daily workflow 
+* make last 10 runs table
+* put tables side by side (as images?)
+
+* Shade purple for green/blue
+* Top 3 rides, last 3 rides as % of best.
+* Distribution of top 50%, with rug of quantiles
+* Plot of average watts
+* What's 50%, 70%, 80% of my top? What is that in AVg Watts?
+* Last 30 days calendar
+
+* Build a cycling calendar view for durations
+* Build a run calendar for miles on a day 
+
+Ideas: \* time spent on bike \* leaderboard %
+
+Formatting:
+* fix dates in tables (match the "%a" format)
+* date break plots by quarter
+* Fix the pace for > 60 minutes (use an HMS format...)
+* Calendar plot:
+  * Reverse direction of the days (Top = Sun, bot = Sat) 
+  * Add duration/KJ as an alpha fill overlay (1, 1.5, 2, 3, 4.5, 6) for records 
+  * Add month's count in name? 
+  * Round the corners of the tiles: <https://rud.is/b/2019/09/27/100-stacked-chicklets/> 
+
+Deprecated:
+
+* plot avg watts over last
+10 rides (so I can know how I'm trending recently). Doesn't do much good
+to see plot of avg watts over time. That's just novelty. And I already
+have my table of "last ride", so I know where I'm trending. Maybe add to
+table last 3 rides? Not useful.
+
+[Peloton R package](https://lgellis.github.io/pelotonR/)
+
+-   can get all workouts quickly
+-   can get metadata on workout (total difficulty)
+
+Other R package (limits to 100 workouts), but offers: \* can't get
+leaderboard rank (need other R package for that) \* can't get miles
+ridden
+
+

@@ -1,5 +1,6 @@
 ---
 title: "Blog"
+description: My thoughts
 site: distill::distill_website
 listing: posts
 ---

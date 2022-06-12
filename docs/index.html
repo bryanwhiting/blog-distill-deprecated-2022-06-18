@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
   <meta name="generator" content="distill" />
+  <link rel="alternate" type="application/rss+xml" href="https://www.bryanwhiting.com/index.xml" />
 
   <style type="text/css">
   /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
@@ -89,24 +90,27 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_meta_tags-->
   <title>Bryan Whiting: Blog</title>
 
+  <meta property="description" itemprop="description" content="My thoughts"/>
 
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
   <meta property="og:title" content="Bryan Whiting: Blog"/>
   <meta property="og:type" content="article"/>
+  <meta property="og:description" content="My thoughts"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="Bryan Whiting"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
   <meta property="twitter:title" content="Bryan Whiting: Blog"/>
+  <meta property="twitter:description" content="My thoughts"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","site","listing"]}},"value":[{"type":"character","attributes":{},"value":["Blog"]},{"type":"character","attributes":{},"value":["distill::distill_website"]},{"type":"character","attributes":{},"value":["posts"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","site","listing"]}},"value":[{"type":"character","attributes":{},"value":["Blog"]},{"type":"character","attributes":{},"value":["My thoughts"]},{"type":"character","attributes":{},"value":["distill::distill_website"]},{"type":"character","attributes":{},"value":["posts"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2073,7 +2077,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Blog","authors":[]}
+{"title":"Blog","description":"My thoughts","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2233,26 +2237,6 @@ function init_posts_list() {
 <div class="posts-container posts-with-sidebar posts-apply-limit l-screen-inset">
 <div class="posts-list">
 <h1 class="posts-list-caption" data-caption="Blog">Blog</h1>
-<a href="posts/2022-00-00-template/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["data science","life"]}</script>
-<div class="metadata">
-<div class="publishedDate">Jan. 1, 2022</div>
-<div class="dt-authors">
-<div class="dt-author">Bryan Whiting</div>
-</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>TEMPLATE</h2>
-<div class="dt-tags">
-<div class="dt-tag">data science</div>
-<div class="dt-tag">life</div>
-</div>
-<p></p>
-</div>
-</a>
 <a href="posts/2018-07-02-semantic-versioning-for-data-science-models/" class="post-preview">
 <script class="post-metadata" type="text/json">{"categories":["data science","machine learning"]}</script>
 <div class="metadata">
@@ -2292,7 +2276,7 @@ function init_posts_list() {
 <div class="dt-tag">pricing</div>
 <div class="dt-tag">buying things</div>
 </div>
-<p></p>
+<p>How I analyze used car data to find under-valued cars, and why none of my analysis matters.</p>
 </div>
 </a>
 <a href="posts/2017-10-18-used-cars-scrape/" class="post-preview">
@@ -2314,7 +2298,7 @@ function init_posts_list() {
 <div class="dt-tag">pricing</div>
 <div class="dt-tag">r</div>
 </div>
-<p></p>
+<p>How I scrape used car data.</p>
 </div>
 </a>
 <a href="posts/2017-02-10-ggplot-plotly/" class="post-preview">
@@ -2336,7 +2320,7 @@ function init_posts_list() {
 <div class="dt-tag">ggplot</div>
 <div class="dt-tag">plotly</div>
 </div>
-<p></p>
+<p>What can you do with plotly vs. ggplot2 and how do they compare on a simple chart?</p>
 </div>
 </a>
 <a href="posts/2016-11-07-starting-with-jekyll/" class="post-preview">
@@ -2357,7 +2341,7 @@ function init_posts_list() {
 <div class="dt-tag">blogging</div>
 <div class="dt-tag">jekyll</div>
 </div>
-<p></p>
+<p>Blogging on Jekyll.</p>
 </div>
 </a>
 </div>
@@ -2367,7 +2351,7 @@ function init_posts_list() {
 <ul>
 <li>
 <a href="#category:articles">articles</a>
-<span class="category-count">(6)</span>
+<span class="category-count">(5)</span>
 </li>
 <li>
 <a href="#category:analysis">analysis</a>
@@ -2387,7 +2371,7 @@ function init_posts_list() {
 </li>
 <li>
 <a href="#category:data_science">data science</a>
-<span class="category-count">(2)</span>
+<span class="category-count">(1)</span>
 </li>
 <li>
 <a href="#category:dataviz">dataviz</a>
@@ -2399,10 +2383,6 @@ function init_posts_list() {
 </li>
 <li>
 <a href="#category:jekyll">jekyll</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:life">life</a>
 <span class="category-count">(1)</span>
 </li>
 <li>
@@ -2446,7 +2426,7 @@ function init_posts_list() {
 <h1>Blog</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-
+<p>My thoughts</p>
 </div>
 
 

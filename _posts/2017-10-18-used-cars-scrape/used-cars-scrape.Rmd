@@ -1,5 +1,6 @@
 ---
 title: 'Buying a used car the data science way: Part 1'
+description: How I scrape used car data.
 author: Bryan Whiting
 date: 2017-02-18
 output:

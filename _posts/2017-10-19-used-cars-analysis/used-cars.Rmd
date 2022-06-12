@@ -1,5 +1,6 @@
 ---
 title: 'Buying a used car the data science way: Part 2'
+description: How I analyze used car data to find under-valued cars, and why none of my analysis matters.
 author: Bryan Whiting
 date: 2017-02-19
 output:

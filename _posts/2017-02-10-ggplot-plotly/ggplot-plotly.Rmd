@@ -1,5 +1,6 @@
 ---
 title: 'The DataViz battle: Plotly vs ggplot2'
+description: What can you do with plotly vs. ggplot2 and how do they compare on a simple chart?
 author: Bryan Whiting
 date: 2017-02-10
 output:

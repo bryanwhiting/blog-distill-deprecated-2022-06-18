@@ -56,7 +56,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { color: #20794d; } /* Attribute */
+code span.at { } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
 code span.cf { color: #007ba5; } /* ControlFlow */
@@ -77,7 +77,7 @@ code span.kw { color: #007ba5; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
 code span.ot { color: #007ba5; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
-code span.sc { color: #20794d; } /* SpecialChar */
+code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
 code span.st { color: #20794d; } /* String */
 code span.va { color: #111111; } /* Variable */
@@ -85,9 +85,11 @@ code span.vs { color: #20794d; } /* VerbatimString */
 code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
+
   <!--radix_placeholder_meta_tags-->
   <title>Starting with Jekyll</title>
 
+  <meta property="description" itemprop="description" content="Blogging on Jekyll."/>
 
 
   <!--  https://schema.org/Article -->
@@ -98,22 +100,24 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
   <meta property="og:title" content="Starting with Jekyll"/>
   <meta property="og:type" content="article"/>
+  <meta property="og:description" content="Blogging on Jekyll."/>
   <meta property="og:locale" content="en_US"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
   <meta property="twitter:title" content="Starting with Jekyll"/>
+  <meta property="twitter:description" content="Blogging on Jekyll."/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","author","date","output","categories"]}},"value":[{"type":"character","attributes":{},"value":["Starting with Jekyll"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Bryan Whiting"]}]}]},{"type":"character","attributes":{},"value":["11-07-2016"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]},{"type":"character","attributes":{},"value":["productivity","blogging","jekyll"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output","categories","draft"]}},"value":[{"type":"character","attributes":{},"value":["Starting with Jekyll"]},{"type":"character","attributes":{},"value":["Blogging on Jekyll."]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Bryan Whiting"]}]}]},{"type":"character","attributes":{},"value":["11-07-2016"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]},{"type":"character","attributes":{},"value":["productivity","blogging","jekyll"]},{"type":"logical","attributes":{},"value":[false]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["starting-with-jekyll_files/anchor-4.2.2/anchor.min.js","starting-with-jekyll_files/bowser-1.9.3/bowser.min.js","starting-with-jekyll_files/distill-2.2.21/template.v2.js","starting-with-jekyll_files/header-attrs-2.10/header-attrs.js","starting-with-jekyll_files/jquery-1.11.3/jquery.min.js","starting-with-jekyll_files/popper-2.6.0/popper.min.js","starting-with-jekyll_files/tippy-6.2.7/tippy-bundle.umd.min.js","starting-with-jekyll_files/tippy-6.2.7/tippy-light-border.css","starting-with-jekyll_files/tippy-6.2.7/tippy.css","starting-with-jekyll_files/tippy-6.2.7/tippy.umd.min.js","starting-with-jekyll_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["starting-with-jekyll_files/anchor-4.2.2/anchor.min.js","starting-with-jekyll_files/bowser-1.9.3/bowser.min.js","starting-with-jekyll_files/distill-2.2.21/template.v2.js","starting-with-jekyll_files/header-attrs-2.10/header-attrs.js","starting-with-jekyll_files/header-attrs-2.11/header-attrs.js","starting-with-jekyll_files/jquery-1.11.3/jquery.min.js","starting-with-jekyll_files/jquery-3.6.0/jquery-3.6.0.js","starting-with-jekyll_files/jquery-3.6.0/jquery-3.6.0.min.js","starting-with-jekyll_files/jquery-3.6.0/jquery-3.6.0.min.map","starting-with-jekyll_files/popper-2.6.0/popper.min.js","starting-with-jekyll_files/tippy-6.2.7/tippy-bundle.umd.min.js","starting-with-jekyll_files/tippy-6.2.7/tippy-light-border.css","starting-with-jekyll_files/tippy-6.2.7/tippy.css","starting-with-jekyll_files/tippy-6.2.7/tippy.umd.min.js","starting-with-jekyll_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -1260,7 +1264,10 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
+        var refs = $(this).attr('data-cites').split(" ");
+        var refHtml = refs.map(function(ref) {
+          return "<p>" + $('#ref-' + ref).html() + "</p>";
+        }).join("\n");
         window.tippy(this, {
           allowHTML: true,
           content: refHtml,
@@ -1431,8 +1438,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </script>
 
   <!--/radix_placeholder_distill-->
-  <script src="starting-with-jekyll_files/header-attrs-2.10/header-attrs.js"></script>
-  <script src="starting-with-jekyll_files/jquery-1.11.3/jquery.min.js"></script>
+  <script src="starting-with-jekyll_files/header-attrs-2.11/header-attrs.js"></script>
+  <script src="starting-with-jekyll_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <script src="starting-with-jekyll_files/popper-2.6.0/popper.min.js"></script>
   <link href="starting-with-jekyll_files/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="starting-with-jekyll_files/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -1452,7 +1459,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Starting with Jekyll","authors":[{"author":"Bryan Whiting","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2016-11-07T00:00:00.000+00:00","citationText":"Whiting, 2016"}
+{"title":"Starting with Jekyll","description":"Blogging on Jekyll.","authors":[{"author":"Bryan Whiting","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2016-11-07T00:00:00.000+00:00","citationText":"Whiting, 2016"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -1470,7 +1477,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <div class="dt=tag">jekyll</div>
 </div>
 <!--/radix_placeholder_categories-->
-
+<p>Blogging on Jekyll.</p>
 </div>
 
 <div class="d-byline">
@@ -1509,13 +1516,13 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <li>In GitHub, rename the newly-forked repo from “REPO name” to “yourgithubusername.github.io”. (1 min)</li>
 <li>Now go to “githubuserbame.github.io”. Voila, you have a blog.</li>
 </ol>
-<p>And if you want to start writing posts, go to your "_posts" folder. Then create new files and follow the default templates that the repository provides. (The blogs will need to be written in Markdown syntax.)</p>
+<p>And if you want to start writing posts, go to your “_posts” folder. Then create new files and follow the default templates that the repository provides. (The blogs will need to be written in Markdown syntax.)</p>
 <p>That was my 10 minute promise. If you feel a bit cheated or lost, go to the well-done <a href="https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/">tutorial</a> and do all the steps. But the steps I listed are the essential steps to setting up a blog from scratch. So if you want to make a few blogs really quickly, after you figure out the first one the others follow nicely. For example, once I finished the tutorial, I followed those steps above to try two other themes before deciding on the <a href="https://github.com/bencentra/centrarium">Centrarium</a> theme.</p>
-<p>To get Centrarium to work, I did have to change some configurations in the "_config.yml", so there can be some minor debugging depending on the theme you choose. But with a little patience and some Googling, you’ll get it.</p>
+<p>To get Centrarium to work, I did have to change some configurations in the “_config.yml”, so there can be some minor debugging depending on the theme you choose. But with a little patience and some Googling, you’ll get it.</p>
 <h1 id="add-to-jekyll-a-custom-url-from-godaddy">Add to Jekyll a custom URL from GoDaddy</h1>
 <p>You’ll notice I have a custom URL and not “bryanwhiting.github.io”. I used GoDaddy to get a domain. (I have no affiliation with GoDaddy.) Here’s how I linked GoDaddy with my GitHub Jekyll blog:</p>
 <ol type="1">
-<li>Go to GoDaddy. Get a domain.</li>
+<li>Get a domain.</li>
 <li>In your Github repo, change (or create) a CNAME file in the main directory. (See my <a href="https://github.com/bryanwhiting/bryanwhiting.github.io/blob/master/CNAME">CNAME</a> file for an example). And for the CNAME file contents, just type in the new “www” that you registered through GoDaddy.</li>
 <li>Then, on GoDaddy, go to the section “DNS Management”. Here’s where you tell GoDaddy how to connect your newly purchased “www” with GitHub. Create the following connections:</li>
 <li>[Type, Name, Value, TTL] = [A, @, 192.30.252.153, 600 seconds]</li>
@@ -1523,7 +1530,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <li>[Type, Name, Value, TTL] = [CNAME, ftp, yourgithubusername.github.io, 600 seconds]</li>
 <li>[Type, Name, Value, TTL] = [CNAME, www, yourgithubusername.github.io, 600 seconds]</li>
 </ol>
-<p>If you have the CNAME file in your GitHub folder, GitHub and GoDaddy will talk and after a few minutes your custom “www” will work. You don’t technically need the two [A] steps, but those connections allow users to type “<a href="http://bryanwhiting.com">bryanwhiting.com</a>” instead of “www.bryanwhiting.com”. It can take up to 24 hours before these [A] connections enable, so don’t be worried if the short URL doesn’t work first try. But the full URL should work soon enough.</p>
+<p>If you have the CNAME file in your GitHub folder, GitHub and GoDaddy will talk and after a few minutes your custom “www” will work. You don’t technically need the two [A] steps, but those connections allow users to type “<a href="http://www.bryanwhiting.com">bryanwhiting.com</a>” instead of “www.bryanwhiting.com”. It can take up to 24 hours before these [A] connections enable, so don’t be worried if the short URL doesn’t work first try. But the full URL should work soon enough.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <section class="footnotes" role="doc-endnotes">
 <hr />
