@@ -3,6 +3,7 @@ title: "Making a Peloton Dashboard"
 description: |
   A short description of the post.
 author: []
+draft: true
 date: 2021-11-23
 output:
   distill::distill_article:

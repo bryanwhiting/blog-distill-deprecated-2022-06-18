@@ -17,3 +17,8 @@ navbar:
 rss:
   full_content: true
 output: distill::distill_article
+collections:
+  posts:
+    disqus: blog-distill
+    share: [twitter, linkedin]
+

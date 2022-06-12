@@ -2,6 +2,7 @@
 title: "workouts"
 author: "Bryan Whiting"
 date: "11/16/2021"
+draft: true
 output:
   distill::distill_article:
     code_folding: true
@@ -55,13 +56,13 @@ colors = palette_pander(8)
 ```
 
 ```{r authenticate}
-authenticate(username = 'bryan.g.whiting@gmail.com',
-             password = 'Silvermin3!peloton')
+authenticate(username = 'myem',
+             password = 'sp')
 
-my_strava_id <- 57863625
+my_strava_id <- 23456
 app_name <- 'workout_dashboard' # chosen by user
-app_client_id  <- '74379' # an integer, assigned by Strava
-app_secret <- '4fcae0e77f870e4464a63933dffda899a0f32ca8' # an alphanumeric secret, assigned by Strava
+app_client_id  <- '###' # an integer, assigned by Strava
+app_secret <- '####' # an alphanumeric secret, assigned by Strava
 
 # create the authentication token
 stoken <- httr::config(token = strava_oauth(app_name, app_client_id, app_secret, app_scope="activity:read_all", cache=TRUE))

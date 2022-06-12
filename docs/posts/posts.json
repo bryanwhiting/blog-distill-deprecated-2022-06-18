@@ -1,5 +1,25 @@
 [
   {
+    "path": "posts/2022-00-00-template/",
+    "title": "TEMPLATE",
+    "description": {},
+    "author": [
+      {
+        "name": "Bryan Whiting",
+        "url": {}
+      }
+    ],
+    "date": "2022-01-01",
+    "categories": [
+      "data science",
+      "life"
+    ],
+    "contents": "\nH1\n\nS1\nS2\nHello world!\nThis is some content.\nThis is a photo.\n\nThis is why I like this photo.\nHere is a link.\nsubheader\nheader\nHello world!\nThis is some content.\nThis is a photo.\n\nThis is why I like this photo.\nHere is a link.\nsubheader\nheader\n\n\n\n",
+    "preview": {},
+    "last_modified": "2022-06-12T00:12:20+00:00",
+    "input_file": {}
+  },
+  {
     "path": "posts/2018-07-02-semantic-versioning-for-data-science-models/",
     "title": "Semantic Versioning for Data Science Models",
     "description": "Meaningful versioning for data science models and machine learning pipelines.",
