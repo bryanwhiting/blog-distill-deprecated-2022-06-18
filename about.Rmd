@@ -49,9 +49,16 @@ url_color = "#007bff"
 
 tribble(
   ~start, ~stop, ~company, ~url, ~title, ~location, ~notes,
+  # Hopper
+  "2022/01", "Present",
+  "Hopper",
+  "https://www.hopper.com/",
+  "Senior Data Scientist, Hotels Marketplace",
+  "Remote",
+  "App Experience: recommendation systems, A/B testing, product insights, user analysis. Price Merchandising: pricing and markup optimization, competitive pricing intelligence.",
   # Google
-  "2020/03", "Present",
-  "Google/YouTube",
+  "2020/03", "2022/01",
+  "Google: Maps, YouTube",
   "https://music.youtube.com",
   "Data Scientist, Engineering",
   "San Bruno, CA",

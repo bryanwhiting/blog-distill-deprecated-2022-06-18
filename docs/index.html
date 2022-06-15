@@ -2091,6 +2091,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <div class="nav-right">
 <a href="index.html">Blog</a>
 <a href="about.html">About</a>
+<a href="index.xml">
+<i class="fa fa-rss" aria-hidden="true"></i>
+</a>
 <a href="https://github.com/bryanwhiting/blog" aria-label="Link to source">
 <i class="fab fa-github" aria-hidden="true"></i>
 </a>
@@ -2241,7 +2244,6 @@ function init_posts_list() {
 <script class="post-metadata" type="text/json">{"categories":["data science","machine learning"]}</script>
 <div class="metadata">
 <div class="publishedDate">July 2, 2018</div>
-<div class="dt-authors"></div>
 </div>
 <div class="thumbnail">
 <img/>
@@ -2259,9 +2261,6 @@ function init_posts_list() {
 <script class="post-metadata" type="text/json">{"categories":["webscraping","r","regression","analysis","pricing","buying things"]}</script>
 <div class="metadata">
 <div class="publishedDate">Feb. 19, 2017</div>
-<div class="dt-authors">
-<div class="dt-author">Bryan Whiting</div>
-</div>
 </div>
 <div class="thumbnail">
 <img/>
@@ -2283,9 +2282,6 @@ function init_posts_list() {
 <script class="post-metadata" type="text/json">{"categories":["webscraping","cars","pricing","r"]}</script>
 <div class="metadata">
 <div class="publishedDate">Feb. 18, 2017</div>
-<div class="dt-authors">
-<div class="dt-author">Bryan Whiting</div>
-</div>
 </div>
 <div class="thumbnail">
 <img/>
@@ -2305,9 +2301,6 @@ function init_posts_list() {
 <script class="post-metadata" type="text/json">{"categories":["dataviz","r","ggplot","plotly"]}</script>
 <div class="metadata">
 <div class="publishedDate">Feb. 10, 2017</div>
-<div class="dt-authors">
-<div class="dt-author">Bryan Whiting</div>
-</div>
 </div>
 <div class="thumbnail">
 <img src="posts/2017-02-10-ggplot-plotly/ggplot-plotly_files/figure-html5/unnamed-chunk-2-1.png"/>
@@ -2327,9 +2320,6 @@ function init_posts_list() {
 <script class="post-metadata" type="text/json">{"categories":["productivity","blogging","jekyll"]}</script>
 <div class="metadata">
 <div class="publishedDate">Nov. 7, 2016</div>
-<div class="dt-authors">
-<div class="dt-author">Bryan Whiting</div>
-</div>
 </div>
 <div class="thumbnail">
 <img/>
@@ -2346,6 +2336,22 @@ function init_posts_list() {
 </a>
 </div>
 <div class="posts-sidebar">
+<div><div class="sidebar-section custom">
+  <h3>About</h3>
+  A blog about data, tech, and life. I write to learn. I learn when I write. See <a href="https://www.bryanwhiting.com/about">bio</a> for more.
+</div>
+
+<!--https://rstudio.github.io/distill/blog.html?panelset=tidymodels#custom-html
+Google: https://stackoverflow.com/a/48959085/2138773
+-->
+<div class="sidebar-section custom">
+  <h3>Search</h3>
+  <form action="http://www.google.com/search" method="get">
+   <input type="hidden" name="q" value="site:https://bryanwhiting.com" >
+   <input type="text" name="q" alt="search" placeholder="Search...">
+   <input type="submit" value="Search">
+</form>
+</div></div>
 <div class="sidebar-section categories">
 <h3>Categories</h3>
 <ul>

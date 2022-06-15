@@ -7,6 +7,7 @@ draft: true
 output:
   distill::distill_article:
     self_contained: false
+# preview: images/sharpe-ratio.png
 categories: 
   - data science
   - life

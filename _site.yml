@@ -7,11 +7,16 @@ output_dir: "docs"
 google_analytics: "UA-85616639-1"
 navbar:
   search: true
+  # logo:
+  #   image: img/profile.jpg
+  #   href: https://www.bryanwhiting.com
   right:
     - text: "Blog"
       href: index.html
     - text: "About"
       href: about.html
+    - icon: fa fa-rss
+      href: index.xml
   source_url: https://github.com/bryanwhiting/blog
 rss:
   full_content: true
@@ -19,6 +24,14 @@ output:
   distill::distill_article
 collections:
   posts:
-    disqus: blog-distill
+    disqus: 
+      shortname: blog-distill
+      hidden: false
     share: [twitter, linkedin]
+    authors_metadata: false
+    feed_items_max: 50
+    citations: false
+    # subscribe: _subscribe.html
+    custom: _sidebar.html
+
 
